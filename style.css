@@ -1,56 +1,245 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VILÀTRIO | Música para tus eventos</title>
-<link rel="stylesheet" href="style.css">
-</head>
+:root {
+    --cream: #f7f3ec;
+    --dark: #211f20;
+    --burgundy: #6b3d4b;
+    --gold: #b59a67;
+    --white: #ffffff;
+}
 
-<body>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<nav>
-    <a class="logo" href="index.html">VILÀTRIO</a>
+html {
+    scroll-behavior: smooth;
+}
 
-    <div class="tabs">
-        <a class="active" href="index.html">Inicio</a>
-        <a href="vilatrio.html">Quiénes somos</a>
-        <a href="bodas.html">Bodas</a>
-        <a href="eventos.html">Eventos</a>
-        <a href="repertorio.html">Repertorio</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
-</nav>
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height: 1.6;
+}
 
-<header class="hero">
-    <div class="hero-content">
-        <div class="hero-logo">VILÀTRIO</div>
-        <p class="hero-subtitle">música para tus eventos</p>
-        <a class="btn" href="https://forms.gle/u8Z4zXf5XdLMKu8k9" target="_blank" rel="noopener">
-            Solicitar presupuesto
-        </a>
-    </div>
-</header>
+/* NAVEGACIÓN */
 
-<section class="intro">
-    <div class="section-head">
-        <h2>Música en directo para momentos especiales</h2>
-        <p>
-            Dos violines y piano para acompañar bodas, celebraciones y eventos
-            con una propuesta cercana, elegante y adaptada a cada ocasión.
-        </p>
-    </div>
-</section>
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: rgba(247, 243, 236, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+}
 
-<section class="quote">
-    <blockquote>
-        “Cada momento tiene su música.”
-    </blockquote>
-</section>
+.logo {
+    font-size: 1.45rem;
+    letter-spacing: 0.18em;
+    color: var(--dark);
+    font-weight: bold;
+    text-decoration: none;
+}
 
-<footer>
-    © 2026 VILÀTRIO · Música en directo
-</footer>
+.tabs {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 
-</body>
-</html>
+.tabs a {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.65rem;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 8px 11px;
+    border-bottom: 1px solid transparent;
+    transition: 0.25s;
+}
+
+.tabs a:hover,
+.tabs a.active {
+    color: var(--burgundy);
+    border-bottom-color: var(--gold);
+}
+
+/* PORTADA */
+
+.hero {
+    min-height: calc(100vh - 72px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 100px 7%;
+    position: relative;
+    overflow: hidden;
+
+    /* Aquí irá la foto del trío */
+    background-image:
+        linear-gradient(
+            rgba(20, 18, 18, 0.38),
+            rgba(20, 18, 18, 0.38)
+        ),
+        url("hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-logo {
+    font-size: clamp(4rem, 11vw, 8rem);
+    line-height: 0.9;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    margin-bottom: 22px;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hero-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.15rem);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--white);
+    color: var(--dark);
+    text-decoration: none;
+    padding: 14px 27px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: var(--burgundy);
+    color: white;
+}
+
+/* INTRODUCCIÓN */
+
+section {
+    padding: 100px 7%;
+}
+
+.intro {
+    background: var(--cream);
+}
+
+.section-head {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-head h2 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: normal;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.section-head p {
+    font-size: 1.05rem;
+    color: #575052;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* FRASE */
+
+.quote {
+    text-align: center;
+    background: #ece5dc;
+}
+
+.quote blockquote {
+    max-width: 850px;
+    margin: auto;
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    font-style: italic;
+    color: var(--burgundy);
+}
+
+/* ELEMENTOS GENERALES */
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    font-size: 0.7rem;
+}
+
+footer {
+    padding: 25px;
+    background: var(--dark);
+    color: #ddd6ce;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+/* MÓVIL */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 13px 4%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .tabs {
+        gap: 1px;
+    }
+
+    .tabs a {
+        font-size: 0.5rem;
+        padding: 5px 5px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 60px);
+        padding: 80px 6%;
+    }
+
+    .hero-logo {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .hero-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+}
