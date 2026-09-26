@@ -406,7 +406,7 @@ footer {
 }
 
 
-/* BOTONES DEL REPERTORIO */
+/* BOTÓN DEL DOSSIER */
 
 .repertoire-button-container {
     display: block;
@@ -538,11 +538,6 @@ footer {
     text-align: center;
 }
 
-/* 
-   Ancho simétrico para canción y compositor.
-   Esto mantiene todo el conjunto perfectamente centrado.
-*/
-
 .event-repertoire-list p em,
 .event-repertoire-list p span {
     width: 190px;
@@ -564,36 +559,17 @@ footer {
 
 .special-song {
     background: var(--cream);
-    padding: 55px 7% 75px;
+    padding: 35px 7% 55px;
     text-align: center;
 }
 
-.special-song-content {
-    max-width: 650px;
-    margin: 0 auto;
-    padding-top: 35px;
-    border-top: 1px solid rgba(181, 154, 103, 0.35);
-}
-
-.special-song h2 {
-    font-size: 1.7rem;
-    font-weight: normal;
-    color: var(--burgundy);
-    margin-bottom: 12px;
-}
-
 .special-song p {
-    max-width: 560px;
-    margin: 0 auto 22px;
-    color: #575052;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #756c6d;
     font-size: 0.95rem;
-    line-height: 1.7;
-}
-
-.special-song .repertoire-button {
-    padding: 12px 23px;
-    font-size: 0.65rem;
-    letter-spacing: 0.11em;
+    line-height: 1.8;
+    font-style: italic;
 }
 
 
@@ -1026,24 +1002,12 @@ footer {
     /* CANCIÓN ESPECIAL */
 
     .special-song {
-        padding: 45px 6% 60px;
-    }
-
-    .special-song-content {
-        padding-top: 28px;
-    }
-
-    .special-song h2 {
-        font-size: 1.45rem;
+        padding: 30px 6% 45px;
     }
 
     .special-song p {
-        font-size: 0.9rem;
-    }
-
-    .special-song .repertoire-button {
-        padding: 11px 20px;
-        font-size: 0.6rem;
+        font-size: 0.88rem;
+        line-height: 1.7;
     }
 
 
