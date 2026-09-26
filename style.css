@@ -1,3 +1,4 @@
+```css
 :root {
     --cream: #f7f3ec;
     --dark: #211f20;
@@ -431,27 +432,6 @@ footer {
 }
 
 
-/* DOSSIER */
-
-.repertoire-dossier {
-    background: white;
-    padding: 95px 7% 105px;
-}
-
-.repertoire-dossier .section-head {
-    max-width: 800px;
-}
-
-.repertoire-dossier h2 {
-    margin-top: 12px;
-    margin-bottom: 18px;
-}
-
-.repertoire-dossier .section-head p {
-    margin-bottom: 35px;
-}
-
-
 /* BOTÓN DEL DOSSIER */
 
 .repertoire-button {
@@ -466,6 +446,7 @@ footer {
     font-size: 0.8rem;
     font-weight: bold;
     transition: 0.25s;
+    margin-top: 30px;
 }
 
 .repertoire-button:hover {
@@ -492,42 +473,46 @@ footer {
 }
 
 .wedding-repertoire .section-head > p {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
 }
 
 .wedding-repertoire-list {
-    max-width: 1050px;
+    max-width: 900px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 65px;
-    row-gap: 65px;
 }
 
 .wedding-repertoire-item {
-    text-align: center;
-    padding: 10px;
+    padding: 24px 10px;
+    border-bottom: 1px solid rgba(181, 154, 103, 0.4);
 }
 
 .wedding-repertoire-item h3 {
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
-    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
     font-weight: bold;
     color: var(--gold);
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 
-.wedding-repertoire-item p {
-    color: var(--dark);
-    font-size: 1.15rem;
-    line-height: 1.7;
+.wedding-song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
-.wedding-repertoire-item p em {
-    font-size: 1.35rem;
+.wedding-song em {
+    font-style: normal;
     color: var(--burgundy);
+    font-size: 1.2rem;
+}
+
+.wedding-song span {
+    color: #575052;
+    text-align: right;
+    font-size: 1rem;
 }
 
 
@@ -556,23 +541,28 @@ footer {
 .event-repertoire-list {
     max-width: 850px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
-    row-gap: 0;
 }
 
 .event-repertoire-list p {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
     padding: 17px 10px;
     color: #575052;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
     border-bottom: 1px solid rgba(181, 154, 103, 0.25);
 }
 
 .event-repertoire-list p em {
+    font-style: normal;
     color: var(--burgundy);
+}
+
+.event-repertoire-list p span {
+    text-align: right;
+    color: #575052;
 }
 
 
@@ -972,25 +962,24 @@ footer {
         padding: 85px 6% 60px;
     }
 
-    .repertoire-dossier {
-        padding: 75px 6% 85px;
-    }
-
     .wedding-repertoire {
         padding: 75px 6% 85px;
     }
 
     .wedding-repertoire-list {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        max-width: 600px;
     }
 
     .wedding-repertoire .section-head > p {
         margin-bottom: 40px;
     }
 
-    .wedding-repertoire-item p em {
-        font-size: 1.25rem;
+    .wedding-song {
+        gap: 20px;
+    }
+
+    .wedding-song em {
+        font-size: 1.1rem;
     }
 
     .event-repertoire {
@@ -998,8 +987,11 @@ footer {
     }
 
     .event-repertoire-list {
-        grid-template-columns: 1fr;
         max-width: 600px;
+    }
+
+    .event-repertoire-list p {
+        gap: 20px;
     }
 
     .special-song {
@@ -1097,3 +1089,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+```
