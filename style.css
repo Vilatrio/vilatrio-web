@@ -518,14 +518,25 @@ footer {
     text-align: center;
 }
 
+/* 
+   Cada canción y compositor ocupa el mismo ancho.
+   Así el conjunto queda perfectamente centrado aunque
+   los nombres tengan longitudes diferentes.
+*/
+.event-repertoire-list p em,
+.event-repertoire-list p span {
+    width: 190px;
+}
+
 .event-repertoire-list p em {
     font-style: normal;
     color: var(--burgundy);
+    text-align: right;
 }
 
 .event-repertoire-list p span {
-    text-align: left;
     color: #575052;
+    text-align: left;
 }
 
 /* CANCIÓN ESPECIAL */
@@ -925,6 +936,21 @@ footer {
 
     .event-repertoire-list p {
         gap: 20px;
+    }
+
+    /* En móvil mantenemos el conjunto centrado,
+       pero reducimos el ancho de cada columna */
+    .event-repertoire-list p em,
+    .event-repertoire-list p span {
+        width: 145px;
+    }
+
+    .event-repertoire-list p em {
+        text-align: right;
+    }
+
+    .event-repertoire-list p span {
+        text-align: left;
     }
 
     .special-song {
