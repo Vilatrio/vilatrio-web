@@ -707,3 +707,21 @@ footer {
     }
 
 }
+/* AJUSTE DEFINITIVO IMAGEN BODAS */
+
+.wedding-image {
+    width: 100%;
+    padding: 0 7% 70px !important;
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
+}
+
+.wedding-image img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1100px !important;
+    height: 420px !important;
+    max-height: 420px !important;
+    object-fit: cover !important;
+}
