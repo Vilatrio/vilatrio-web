@@ -25,6 +25,10 @@
 </nav>
 
 
+<!-- =========================================
+     INTRODUCCIÓN
+========================================= -->
+
 <section class="repertoire-intro">
 
     <div class="section-head">
@@ -46,6 +50,10 @@
 
 </section>
 
+
+<!-- =========================================
+     IDEAS PARA VUESTRA BODA
+========================================= -->
 
 <section class="wedding-repertoire">
 
@@ -135,6 +143,10 @@
 </section>
 
 
+<!-- =========================================
+     MÚSICA PARA EVENTOS
+========================================= -->
+
 <section class="event-repertoire">
 
     <div class="section-head">
@@ -208,6 +220,10 @@
 </section>
 
 
+<!-- =========================================
+     CANCIÓN ESPECIAL
+========================================= -->
+
 <section class="special-song">
 
     <div class="section-head">
@@ -239,88 +255,3 @@
 </html>
 ```
 
-### Y solo necesitamos añadir/modificar el CSS de esta página
-
-No sustituyas tu CSS entero. En la parte de **REPERTORIO - NUEVO DISEÑO**, cambia únicamente las reglas de estas tres zonas para conseguir exactamente esa distribución.
-
-Para **Bodas**, queremos una lista vertical:
-
-```css
-.wedding-repertoire-list {
-    max-width: 900px;
-    margin: 55px auto 0;
-}
-
-.wedding-repertoire-item {
-    padding: 24px 10px;
-    border-bottom: 1px solid rgba(181, 154, 103, 0.4);
-}
-
-.wedding-repertoire-item h3 {
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: var(--gold);
-    margin-bottom: 6px;
-}
-
-.wedding-repertoire-item p {
-    color: var(--dark);
-    font-size: 1.05rem;
-}
-
-.wedding-repertoire-item p em {
-    font-style: normal;
-    color: var(--burgundy);
-    font-size: 1.2rem;
-}
-```
-
-Y para **Eventos**, una sola columna con canción y autor enfrentados:
-
-```css
-.event-repertoire-list {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.event-repertoire-list p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    padding: 17px 10px;
-    color: #575052;
-    font-size: 1rem;
-    line-height: 1.6;
-    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
-}
-
-.event-repertoire-list p em {
-    font-style: normal;
-    color: var(--burgundy);
-}
-
-.event-repertoire-list p span {
-    text-align: right;
-    color: #575052;
-}
-```
-
-Y **muy importante**: elimina del CSS antiguo de repertorio estas propiedades si aparecen en esas mismas reglas:
-
-```css
-grid-template-columns: repeat(3, 1fr);
-```
-
-para bodas, y:
-
-```css
-grid-template-columns: repeat(2, 1fr);
-```
-
-para eventos.
-
-Así no habrá conflicto y quedará exactamente con la estructura que acabamos de definir.
