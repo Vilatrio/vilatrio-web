@@ -837,3 +837,9 @@ footer {
     font-weight: 400;
     letter-spacing: 0.01em;
 }
+/* EVENTOS - DOS COLUMNAS */
+
+.wedding-moment-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+}
