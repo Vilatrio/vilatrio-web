@@ -447,6 +447,7 @@ footer {
 .wedding-repertoire-item {
     padding: 24px 10px;
     border-bottom: 1px solid rgba(181, 154, 103, 0.4);
+    text-align: center;
 }
 
 .wedding-repertoire-item h3 {
@@ -456,7 +457,8 @@ footer {
     font-size: 0.7rem;
     font-weight: bold;
     color: var(--gold);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .wedding-song {
@@ -464,6 +466,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    text-align: center;
 }
 
 .wedding-song em {
@@ -498,20 +501,21 @@ footer {
 }
 
 .event-repertoire-list {
-    max-width: 850px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .event-repertoire-list p {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
     padding: 17px 10px;
     color: #575052;
     font-size: 1rem;
     line-height: 1.6;
     border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+    text-align: center;
 }
 
 .event-repertoire-list p em {
@@ -520,7 +524,7 @@ footer {
 }
 
 .event-repertoire-list p span {
-    text-align: right;
+    text-align: left;
     color: #575052;
 }
 
@@ -899,6 +903,10 @@ footer {
         margin-bottom: 40px;
     }
 
+    .wedding-repertoire-item h3 {
+        margin-bottom: 9px;
+    }
+
     .wedding-song {
         gap: 20px;
     }
@@ -912,7 +920,7 @@ footer {
     }
 
     .event-repertoire-list {
-        max-width: 600px;
+        max-width: 550px;
     }
 
     .event-repertoire-list p {
