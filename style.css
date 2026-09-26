@@ -734,3 +734,78 @@ footer {
     font-size: 1.25rem;
     line-height: 1.9;
 }
+.wedding-moment-list {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    border-top: none;
+}
+
+.wedding-moment {
+    padding: 20px 10px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.wedding-moment:nth-child(odd) {
+    border-right: none;
+}
+
+.wedding-choice {
+    max-width: 800px;
+    margin: 90px auto 0;
+    text-align: center;
+}
+
+.wedding-choice p {
+    color: #575052;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    font-style: italic;
+}
+
+.wedding-repertoire {
+    padding: 100px 7%;
+}
+
+.repertoire-button {
+    display: inline-block;
+    color: var(--burgundy);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+    transition: .25s;
+}
+
+.repertoire-button:hover {
+    color: var(--dark);
+    border-bottom-color: var(--burgundy);
+}
+
+@media(max-width:800px) {
+
+    .wedding-moment-list {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 20px;
+    }
+
+    .wedding-moment {
+        padding: 15px 10px;
+    }
+
+    .wedding-choice {
+        margin-top: 70px;
+    }
+
+    .wedding-repertoire {
+        padding: 75px 6%;
+    }
+
+}
