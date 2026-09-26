@@ -725,3 +725,12 @@ footer {
     max-height: 420px !important;
     object-fit: cover !important;
 }
+.wedding-introduction .about-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.wedding-introduction .about-content p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+}
