@@ -826,3 +826,14 @@ footer {
         margin-top: 70px;
     }
 }
+.wedding-introduction .about-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wedding-introduction .about-content p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
