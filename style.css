@@ -562,3 +562,148 @@ footer {
     }
 
 }
+/* BODAS */
+
+.wedding-intro {
+    background: var(--cream);
+    padding: 120px 7% 80px;
+}
+
+.wedding-intro h1 {
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: .03em;
+    margin-bottom: 18px;
+}
+
+.wedding-intro .section-head p {
+    font-size: 1.2rem;
+    color: #575052;
+    font-style: italic;
+}
+
+.wedding-image {
+    width: 100%;
+    padding: 0 7% 90px;
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
+}
+
+.wedding-image img {
+    width: 100%;
+    max-width: 1100px;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.wedding-introduction {
+    background: white;
+    padding: 100px 7%;
+}
+
+.wedding-moments {
+    background: #ece5dc;
+    padding: 110px 7%;
+}
+
+.wedding-moment-list {
+    max-width: 1050px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid rgba(181,154,103,.4);
+}
+
+.wedding-moment {
+    padding: 45px;
+    border-bottom: 1px solid rgba(181,154,103,.4);
+}
+
+.wedding-moment:nth-child(odd) {
+    border-right: 1px solid rgba(181,154,103,.4);
+}
+
+.wedding-moment h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--burgundy);
+    margin-bottom: 15px;
+}
+
+.wedding-moment p {
+    color: #575052;
+    font-size: 1rem;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.wedding-repertoire {
+    background: white;
+    text-align: center;
+    padding: 100px 7%;
+}
+
+/* TEXTO MÁS FINO Y ELEGANTE */
+
+.about-content p,
+.section-head p,
+.wedding-moment p,
+.contact-text p,
+.repertoire-list p {
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: .01em;
+}
+
+.about-content h2,
+.section-head h2,
+.about-intro h1,
+.contact-intro h1,
+.wedding-intro h1 {
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+
+@media(max-width:800px) {
+
+    .wedding-intro {
+        padding: 85px 6% 60px;
+    }
+
+    .wedding-image {
+        padding: 0 6% 65px;
+    }
+
+    .wedding-image img {
+        height: 360px;
+    }
+
+    .wedding-introduction {
+        padding: 75px 6%;
+    }
+
+    .wedding-moments {
+        padding: 75px 6%;
+    }
+
+    .wedding-moment-list {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .wedding-moment {
+        padding: 32px 10px;
+    }
+
+    .wedding-moment:nth-child(odd) {
+        border-right: none;
+    }
+
+    .wedding-repertoire {
+        padding: 75px 6%;
+    }
+
+}
