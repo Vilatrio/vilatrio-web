@@ -23,11 +23,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   NAVEGACIÓN
-   ========================================= */
-
+/* NAVEGACIÓN */
 nav {
     position: sticky;
     top: 0;
@@ -74,11 +70,7 @@ nav {
     border-bottom-color: var(--gold);
 }
 
-
-/* =========================================
-   PORTADA
-   ========================================= */
-
+/* PORTADA */
 .hero {
     min-height: calc(100vh - 72px);
     display: grid;
@@ -87,14 +79,12 @@ nav {
     padding: 100px 7%;
     position: relative;
     overflow: hidden;
-
     background-image:
         linear-gradient(
             rgba(20, 18, 18, 0.38),
             rgba(20, 18, 18, 0.38)
         ),
         url("hero.jpg");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,11 +132,7 @@ nav {
     color: white;
 }
 
-
-/* =========================================
-   GENERALES
-   ========================================= */
-
+/* GENERALES */
 section {
     padding: 100px 7%;
 }
@@ -188,11 +174,7 @@ footer {
     font-size: 0.75rem;
 }
 
-
-/* =========================================
-   NOSOTROS
-   ========================================= */
-
+/* NOSOTROS */
 .about-intro {
     background: var(--cream);
     padding: 120px 7% 80px;
@@ -211,9 +193,6 @@ footer {
     color: #575052;
     font-style: italic;
 }
-
-
-/* IMAGEN PRINCIPAL */
 
 .about-image {
     width: 100%;
@@ -240,9 +219,6 @@ footer {
     color: #8a7d7f;
 }
 
-
-/* TEXTO SOBRE VILÀTRIO */
-
 .about-text {
     background: white;
     padding: 100px 7% 55px;
@@ -260,9 +236,6 @@ footer {
     line-height: 1.9;
     letter-spacing: 0.01em;
 }
-
-
-/* MÚSICOS */
 
 .musicians {
     background: white;
@@ -315,11 +288,7 @@ footer {
     color: #8a7d7f;
 }
 
-
-/* =========================================
-   OPCIONES
-   ========================================= */
-
+/* OPCIONES */
 .wedding-options,
 .event-options {
     background: var(--cream);
@@ -361,11 +330,7 @@ footer {
     text-align: center;
 }
 
-
-/* =========================================
-   REPERTORIO ANTIGUO
-   ========================================= */
-
+/* REPERTORIO ANTIGUO */
 .repertoire-categories {
     background: #ece5dc;
 }
@@ -406,11 +371,7 @@ footer {
     text-align: center;
 }
 
-
-/* =========================================
-   REPERTORIO - NUEVO DISEÑO
-   ========================================= */
-
+/* REPERTORIO - NUEVO DISEÑO */
 .repertoire-intro {
     background: var(--cream);
     padding: 120px 7% 80px;
@@ -430,9 +391,7 @@ footer {
     font-style: italic;
 }
 
-
 /* BOTONES DEL REPERTORIO */
-
 .repertoire-button-container {
     display: block;
     margin-top: 30px;
@@ -461,11 +420,7 @@ footer {
     color: #ffffff !important;
 }
 
-
-/* =========================================
-   IDEAS PARA VUESTRA BODA
-   ========================================= */
-
+/* IDEAS PARA VUESTRA BODA */
 .wedding-repertoire {
     background: #ece5dc;
     padding: 105px 7% 115px;
@@ -485,7 +440,7 @@ footer {
 }
 
 .wedding-repertoire-list {
-    max-width: 900px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -506,9 +461,9 @@ footer {
 
 .wedding-song {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
 }
 
 .wedding-song em {
@@ -519,15 +474,11 @@ footer {
 
 .wedding-song span {
     color: #575052;
-    text-align: right;
+    text-align: left;
     font-size: 1rem;
 }
 
-
-/* =========================================
-   MÚSICA PARA EVENTOS
-   ========================================= */
-
+/* MÚSICA PARA EVENTOS */
 .event-repertoire {
     background: white;
     padding: 105px 7% 115px;
@@ -573,11 +524,7 @@ footer {
     color: #575052;
 }
 
-
-/* =========================================
-   CANCIÓN ESPECIAL
-   ========================================= */
-
+/* CANCIÓN ESPECIAL */
 .special-song {
     background: var(--cream);
     padding: 105px 7% 115px;
@@ -597,11 +544,7 @@ footer {
     margin-bottom: 35px;
 }
 
-
-/* =========================================
-   CONTACTO
-   ========================================= */
-
+/* CONTACTO */
 .contact-intro {
     background: var(--cream);
     padding: 120px 7% 100px;
@@ -698,11 +641,7 @@ footer {
     color: #8a7d7f;
 }
 
-
-/* =========================================
-   IMÁGENES
-   ========================================= */
-
+/* IMÁGENES */
 .about-image img {
     width: 100%;
     max-width: 1100px;
@@ -711,11 +650,7 @@ footer {
     display: block;
 }
 
-
-/* =========================================
-   BODAS
-   ========================================= */
-
+/* BODAS */
 .wedding-intro {
     background: var(--cream);
     padding: 120px 7% 80px;
@@ -769,9 +704,7 @@ footer {
     letter-spacing: 0.01em;
 }
 
-
 /* MOMENTOS DE BODA */
-
 .wedding-moments {
     background: #ece5dc;
     padding: 105px 7% 115px;
@@ -817,11 +750,7 @@ footer {
     font-style: italic;
 }
 
-
-/* =========================================
-   EVENTOS
-   ========================================= */
-
+/* EVENTOS */
 .event-moments {
     background: #ece5dc;
     padding: 105px 7% 115px;
@@ -833,11 +762,7 @@ footer {
     max-width: 900px;
 }
 
-
-/* =========================================
-   TEXTO GENERAL
-   ========================================= */
-
+/* TEXTO GENERAL */
 .about-content p,
 .section-head p,
 .wedding-moment p,
@@ -848,11 +773,7 @@ footer {
     letter-spacing: 0.01em;
 }
 
-
-/* =========================================
-   RESPONSIVE
-   ========================================= */
-
+/* RESPONSIVE */
 @media (max-width: 800px) {
 
     nav {
@@ -893,9 +814,7 @@ footer {
         padding: 75px 6%;
     }
 
-
     /* NOSOTROS */
-
     .about-intro {
         padding: 85px 6% 60px;
     }
@@ -930,18 +849,14 @@ footer {
         height: 190px;
     }
 
-
     /* OPCIONES */
-
     .wedding-options .cards,
     .event-options .cards {
         grid-template-columns: 1fr;
         margin-top: 40px;
     }
 
-
     /* REPERTORIO ANTIGUO */
-
     .repertoire-list {
         grid-template-columns: 1fr;
     }
@@ -954,9 +869,7 @@ footer {
         border-right: none;
     }
 
-
     /* REPERTORIO NUEVO */
-
     .repertoire-intro {
         padding: 85px 6% 60px;
     }
@@ -979,7 +892,7 @@ footer {
     }
 
     .wedding-repertoire-list {
-        max-width: 600px;
+        max-width: 550px;
     }
 
     .wedding-repertoire .section-head > p {
@@ -1010,9 +923,7 @@ footer {
         padding: 75px 6% 85px;
     }
 
-
     /* CONTACTO */
-
     .contact-intro {
         padding: 85px 6% 70px;
     }
@@ -1026,9 +937,7 @@ footer {
         gap: 50px;
     }
 
-
     /* GALERÍA */
-
     .gallery {
         grid-template-columns: 1fr;
         margin-top: 40px;
@@ -1038,9 +947,7 @@ footer {
         min-height: 250px;
     }
 
-
     /* BODAS */
-
     .wedding-intro {
         padding: 85px 6% 60px;
     }
@@ -1086,9 +993,7 @@ footer {
         margin-top: 70px;
     }
 
-
     /* EVENTOS */
-
     .event-moments {
         padding: 75px 6% 85px;
     }
