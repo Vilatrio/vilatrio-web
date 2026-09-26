@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="es">
 
@@ -37,22 +38,6 @@
             para acompañar diferentes momentos.
         </p>
 
-    </div>
-
-</section>
-
-
-<section class="repertoire-dossier">
-
-    <div class="section-head">
-
-        <div class="eyebrow">Dossier</div>
-
-        <p>
-            Hemos preparado un dossier con todas las obras y canciones
-            que podemos interpretar.
-        </p>
-
         <a class="repertoire-button" href="#">
             Ver dossier completo
         </a>
@@ -85,8 +70,7 @@
             <h3>Entrada del novio</h3>
 
             <p>
-                <em>Canon in D</em>
-                <span>Pachelbel</span>
+                <em>Canon in D</em> — Pachelbel
             </p>
 
         </div>
@@ -97,8 +81,7 @@
             <h3>Entrada de la novia</h3>
 
             <p>
-                <em>A Thousand Years</em>
-                <span>Christina Perri</span>
+                <em>A Thousand Years</em> — Christina Perri
             </p>
 
         </div>
@@ -109,8 +92,7 @@
             <h3>Ceremonia</h3>
 
             <p>
-                <em>Méditation</em>
-                <span>Massenet</span>
+                <em>Méditation</em> — Massenet
             </p>
 
         </div>
@@ -121,8 +103,7 @@
             <h3>Firma</h3>
 
             <p>
-                <em>Air</em>
-                <span>J. S. Bach</span>
+                <em>Air</em> — J. S. Bach
             </p>
 
         </div>
@@ -133,8 +114,7 @@
             <h3>Salida de los novios</h3>
 
             <p>
-                <em>Viva la Vida</em>
-                <span>Coldplay</span>
+                <em>Viva la Vida</em> — Coldplay
             </p>
 
         </div>
@@ -145,8 +125,7 @@
             <h3>Cóctel</h3>
 
             <p>
-                <em>Perfect</em>
-                <span>Ed Sheeran</span>
+                <em>Perfect</em> — Ed Sheeran
             </p>
 
         </div>
@@ -175,43 +154,53 @@
     <div class="event-repertoire-list">
 
         <p>
-            <em>Viva la Vida</em> — Coldplay
+            <em>Viva la Vida</em>
+            <span>Coldplay</span>
         </p>
 
         <p>
-            <em>The Final Countdown</em> — Europe
+            <em>The Final Countdown</em>
+            <span>Europe</span>
         </p>
 
         <p>
-            <em>Perfect</em> — Ed Sheeran
+            <em>Perfect</em>
+            <span>Ed Sheeran</span>
         </p>
 
         <p>
-            <em>A Sky Full of Stars</em> — Coldplay
+            <em>A Sky Full of Stars</em>
+            <span>Coldplay</span>
         </p>
 
         <p>
-            <em>Hallelujah</em> — Leonard Cohen
+            <em>Hallelujah</em>
+            <span>Leonard Cohen</span>
         </p>
 
         <p>
-            <em>A Million Dreams</em> — The Greatest Showman
+            <em>A Million Dreams</em>
+            <span>The Greatest Showman</span>
         </p>
 
         <p>
-            <em>Can You Feel the Love Tonight</em> — Elton John
+            <em>Can You Feel the Love Tonight</em>
+            <span>Elton John</span>
         </p>
 
         <p>
-            <em>Married Life</em> — Up
+            <em>Married Life</em>
+            <span>Up</span>
         </p>
 
         <p>
-            <em>Waltz No. 2</em> — Shostakovich
+            <em>Waltz No. 2</em>
+            <span>Shostakovich</span>
         </p>
 
         <p>
-            <em>Bolero</em> — Ravel
+            <em>Bolero</em>
+            <span>Ravel</span>
         </p>
 
     </div>
@@ -248,3 +237,90 @@
 
 </body>
 </html>
+```
+
+### Y solo necesitamos añadir/modificar el CSS de esta página
+
+No sustituyas tu CSS entero. En la parte de **REPERTORIO - NUEVO DISEÑO**, cambia únicamente las reglas de estas tres zonas para conseguir exactamente esa distribución.
+
+Para **Bodas**, queremos una lista vertical:
+
+```css
+.wedding-repertoire-list {
+    max-width: 900px;
+    margin: 55px auto 0;
+}
+
+.wedding-repertoire-item {
+    padding: 24px 10px;
+    border-bottom: 1px solid rgba(181, 154, 103, 0.4);
+}
+
+.wedding-repertoire-item h3 {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.wedding-repertoire-item p {
+    color: var(--dark);
+    font-size: 1.05rem;
+}
+
+.wedding-repertoire-item p em {
+    font-style: normal;
+    color: var(--burgundy);
+    font-size: 1.2rem;
+}
+```
+
+Y para **Eventos**, una sola columna con canción y autor enfrentados:
+
+```css
+.event-repertoire-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.event-repertoire-list p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 17px 10px;
+    color: #575052;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+}
+
+.event-repertoire-list p em {
+    font-style: normal;
+    color: var(--burgundy);
+}
+
+.event-repertoire-list p span {
+    text-align: right;
+    color: #575052;
+}
+```
+
+Y **muy importante**: elimina del CSS antiguo de repertorio estas propiedades si aparecen en esas mismas reglas:
+
+```css
+grid-template-columns: repeat(3, 1fr);
+```
+
+para bodas, y:
+
+```css
+grid-template-columns: repeat(2, 1fr);
+```
+
+para eventos.
+
+Así no habrá conflicto y quedará exactamente con la estructura que acabamos de definir.
