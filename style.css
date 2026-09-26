@@ -82,7 +82,6 @@ nav {
     position: relative;
     overflow: hidden;
 
-    /* Aquí irá la foto del trío */
     background-image:
         linear-gradient(
             rgba(20, 18, 18, 0.38),
@@ -243,6 +242,7 @@ footer {
         padding: 75px 6%;
     }
 }
+
 /* PÁGINAS INTERIORES */
 
 .about-intro {
@@ -346,8 +346,8 @@ footer {
         grid-template-columns: 1fr;
         margin-top: 40px;
     }
-
 }
+
 /* REPERTORIO */
 
 .repertoire-categories {
@@ -407,8 +407,8 @@ footer {
     .repertoire-list > div:nth-child(odd) {
         border-right: none;
     }
-
 }
+
 /* CONTACTO */
 
 .contact-intro {
@@ -530,8 +530,8 @@ footer {
     .gallery-placeholder {
         min-height: 250px;
     }
-
 }
+
 /* IMÁGENES AMBIENTALES */
 
 .about-image {
@@ -560,8 +560,8 @@ footer {
         max-width: 420px;
         height: 260px !important;
     }
-
 }
+
 /* BODAS */
 
 .wedding-intro {
@@ -585,23 +585,34 @@ footer {
 
 .wedding-image {
     width: 100%;
-    padding: 0 7% 90px;
+    padding: 0 7% 70px;
     background: var(--cream);
     display: flex;
     justify-content: center;
 }
 
 .wedding-image img {
+    display: block;
     width: 100%;
     max-width: 1100px;
-    height: 520px;
+    height: 420px;
+    max-height: 420px;
     object-fit: cover;
-    display: block;
 }
 
 .wedding-introduction {
     background: white;
     padding: 100px 7%;
+}
+
+.wedding-introduction .about-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.wedding-introduction .about-content p {
+    font-size: 1.25rem;
+    line-height: 1.9;
 }
 
 .wedding-moments {
@@ -610,40 +621,66 @@ footer {
 }
 
 .wedding-moment-list {
-    max-width: 1050px;
-    margin: 60px auto 0;
+    max-width: 1150px;
+    margin: 20px auto 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid rgba(181,154,103,.4);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
 }
 
 .wedding-moment {
-    padding: 45px;
-    border-bottom: 1px solid rgba(181,154,103,.4);
-}
-
-.wedding-moment:nth-child(odd) {
-    border-right: 1px solid rgba(181,154,103,.4);
+    padding: 20px 10px;
+    text-align: center;
 }
 
 .wedding-moment h3 {
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: var(--burgundy);
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .wedding-moment p {
     color: #575052;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.9;
-    font-weight: 400;
+}
+
+.wedding-choice {
+    max-width: 850px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.wedding-choice p {
+    color: #575052;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-style: italic;
 }
 
 .wedding-repertoire {
     background: white;
+    padding: 110px 7%;
     text-align: center;
-    padding: 100px 7%;
+}
+
+.repertoire-button {
+    display: inline-block;
+    background: var(--burgundy);
+    color: white;
+    text-decoration: none;
+    padding: 17px 32px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .8rem;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.repertoire-button:hover {
+    background: var(--dark);
 }
 
 /* TEXTO MÁS FINO Y ELEGANTE */
@@ -666,6 +703,8 @@ footer {
     font-weight: 400;
     letter-spacing: .02em;
 }
+
+/* MÓVIL - BODAS */
 
 @media(max-width:800px) {
 
@@ -691,107 +730,6 @@ footer {
 
     .wedding-moment-list {
         grid-template-columns: 1fr;
-        margin-top: 40px;
-    }
-
-    .wedding-moment {
-        padding: 32px 10px;
-    }
-
-    .wedding-moment:nth-child(odd) {
-        border-right: none;
-    }
-
-    .wedding-repertoire {
-        padding: 75px 6%;
-    }
-
-}
-/* AJUSTE DEFINITIVO IMAGEN BODAS */
-
-.wedding-image {
-    width: 100%;
-    padding: 0 7% 70px !important;
-    background: var(--cream);
-    display: flex;
-    justify-content: center;
-}
-
-.wedding-image img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 1100px !important;
-    height: 420px !important;
-    max-height: 420px !important;
-    object-fit: cover !important;
-}
-.wedding-introduction .about-content {
-    max-width: 900px;
-    text-align: center;
-}
-
-.wedding-introduction .about-content p {
-    font-size: 1.25rem;
-    line-height: 1.9;
-}
-.wedding-moment-list {
-    max-width: 1100px;
-    margin: 20px auto 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-    border-top: none;
-}
-
-.wedding-moment {
-    padding: 20px 10px;
-    border-bottom: none;
-    text-align: center;
-}
-
-.wedding-moment:nth-child(odd) {
-    border-right: none;
-}
-
-.wedding-choice {
-    max-width: 800px;
-    margin: 90px auto 0;
-    text-align: center;
-}
-
-.wedding-choice p {
-    color: #575052;
-    font-size: 1.05rem;
-    line-height: 1.9;
-    font-style: italic;
-}
-
-.wedding-repertoire {
-    padding: 100px 7%;
-}
-
-.repertoire-button {
-    display: inline-block;
-    color: var(--burgundy);
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 1rem;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 8px;
-    transition: .25s;
-}
-
-.repertoire-button:hover {
-    color: var(--dark);
-    border-bottom-color: var(--burgundy);
-}
-
-@media(max-width:800px) {
-
-    .wedding-moment-list {
-        grid-template-columns: 1fr;
         gap: 35px;
         margin-top: 20px;
     }
@@ -800,12 +738,19 @@ footer {
         padding: 15px 10px;
     }
 
+    .wedding-moment h3 {
+        font-size: 1.6rem;
+    }
+
+    .wedding-moment p {
+        font-size: 1.05rem;
+    }
+
     .wedding-choice {
         margin-top: 70px;
     }
 
     .wedding-repertoire {
-        padding: 75px 6%;
+        padding: 80px 6%;
     }
-
 }
