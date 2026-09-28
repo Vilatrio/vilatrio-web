@@ -1,4 +1,3 @@
-```css
 :root {
     --cream: #f7f3ec;
     --dark: #211f20;
@@ -88,12 +87,15 @@ nav {
     padding: 100px 7%;
     position: relative;
     overflow: hidden;
+
     background-image:
         linear-gradient(rgba(20,18,18,.38), rgba(20,18,18,.38)),
         url("hero.jpg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     color: white;
 }
 
@@ -654,6 +656,7 @@ footer {
     stroke-linejoin: round;
 }
 
+/* El icono del teléfono necesita relleno */
 .contact-icon svg path:first-child {
     fill: currentColor;
     stroke: none;
@@ -667,22 +670,34 @@ footer {
 }
 
 
-/* BOTÓN PRESUPUESTO */
+/* =========================================================
+   BOTÓN SOLICITAR PRESUPUESTO
+   ========================================================= */
 
-.contact-button-container {
+.contact-budget {
     margin-top: 40px;
     text-align: center;
 }
 
-.contact-button-container .repertoire-button {
-    background: var(--burgundy) !important;
-    color: #ffffff !important;
+.contact-budget a {
+    display: inline-block;
+    background: var(--burgundy);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 17px 34px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.2;
     border: none;
+    transition: .25s;
 }
 
-.contact-button-container .repertoire-button:hover {
-    background: var(--dark) !important;
-    color: #ffffff !important;
+.contact-budget a:hover {
+    background: var(--dark);
+    color: #ffffff;
 }
 
 
@@ -690,52 +705,58 @@ footer {
    MOMENTOS VILÀTRIO
    ========================================================= */
 
-.vilatrio-moments {
-    background: white;
+.moments {
+    background: #ece5dc;
     padding: 100px 7% 110px;
 }
 
-.vilatrio-moments .section-head {
+.moments .section-head {
     max-width: 760px;
 }
 
-.vilatrio-moments .section-head h2 {
+.moments .section-head h2 {
     margin-top: 12px;
     margin-bottom: 18px;
 }
 
-.vilatrio-moments .section-head > p {
+.moments .section-head > p {
     margin-bottom: 55px;
 }
 
 
 /* GALERÍA */
 
-.moments-gallery {
+.gallery {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    gap: 20px;
 }
 
-.moment-photo {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+.gallery-placeholder {
+    min-height: 330px;
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(181, 154, 103, .4);
+    display: grid;
+    place-items: center;
     overflow: hidden;
-    background: #e8e1d8;
 }
 
-.moment-photo img {
+.gallery-placeholder span {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .7rem;
+    color: #8a7d7f;
+}
+
+/* Cuando pongamos fotos */
+.gallery-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform .4s ease;
-}
-
-.moment-photo:hover img {
-    transform: scale(1.03);
 }
 
 
@@ -896,6 +917,8 @@ footer {
 
 @media (max-width:800px) {
 
+    /* NAVEGACIÓN */
+
     nav {
         padding: 13px 4%;
         align-items: center;
@@ -933,6 +956,8 @@ footer {
         letter-spacing: .2em;
     }
 
+
+    /* GENERALES */
 
     section {
         padding: 75px 6%;
@@ -1082,7 +1107,9 @@ footer {
     }
 
 
-    /* CONTACTO */
+    /* =====================================================
+       CONTACTO
+       ===================================================== */
 
     .contact-intro {
         padding: 85px 6% 75px;
@@ -1113,32 +1140,41 @@ footer {
         font-size: .9rem;
     }
 
-    .contact-button-container {
+    .contact-budget {
         margin-top: 38px;
     }
 
+    .contact-budget a {
+        padding: 16px 28px;
+        font-size: .75rem;
+    }
 
-    /* MOMENTOS VILÀTRIO */
 
-    .vilatrio-moments {
+    /* =====================================================
+       MOMENTOS VILÀTRIO
+       ===================================================== */
+
+    .moments {
         padding: 75px 6% 85px;
     }
 
-    .vilatrio-moments .section-head > p {
+    .moments .section-head > p {
         margin-bottom: 40px;
     }
 
-    .moments-gallery {
+    .gallery {
         grid-template-columns: 1fr;
-        gap: 22px;
+        gap: 20px;
     }
 
-    .moment-photo {
-        aspect-ratio: 4 / 3;
+    .gallery-placeholder {
+        min-height: 250px;
     }
 
 
-    /* BODAS */
+    /* =====================================================
+       BODAS
+       ===================================================== */
 
     .wedding-intro {
         padding: 85px 6% 60px;
@@ -1186,7 +1222,9 @@ footer {
     }
 
 
-    /* EVENTOS */
+    /* =====================================================
+       EVENTOS
+       ===================================================== */
 
     .event-moments {
         padding: 75px 6% 85px;
@@ -1196,4 +1234,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-```
