@@ -25,7 +25,9 @@ body {
 }
 
 
-/* NAVEGACIÓN */
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
 
 nav {
     position: sticky;
@@ -74,7 +76,9 @@ nav {
 }
 
 
-/* PORTADA */
+/* =========================================================
+   PORTADA
+   ========================================================= */
 
 .hero {
     min-height: calc(100vh - 72px);
@@ -135,7 +139,9 @@ nav {
 }
 
 
-/* GENERALES */
+/* =========================================================
+   GENERALES
+   ========================================================= */
 
 section {
     padding: 100px 7%;
@@ -179,7 +185,9 @@ footer {
 }
 
 
-/* NOSOTROS */
+/* =========================================================
+   NOSOTROS
+   ========================================================= */
 
 .about-intro {
     background: var(--cream);
@@ -295,7 +303,9 @@ footer {
 }
 
 
-/* OPCIONES */
+/* =========================================================
+   OPCIONES
+   ========================================================= */
 
 .wedding-options,
 .event-options {
@@ -339,7 +349,9 @@ footer {
 }
 
 
-/* REPERTORIO ANTIGUO */
+/* =========================================================
+   REPERTORIO ANTIGUO
+   ========================================================= */
 
 .repertoire-categories {
     background: #ece5dc;
@@ -382,7 +394,9 @@ footer {
 }
 
 
-/* REPERTORIO - NUEVO DISEÑO */
+/* =========================================================
+   REPERTORIO - NUEVO DISEÑO
+   ========================================================= */
 
 .repertoire-intro {
     background: var(--cream);
@@ -571,11 +585,13 @@ footer {
 }
 
 
-/* CONTACTO */
+/* =========================================================
+   CONTACTO
+   ========================================================= */
 
 .contact-intro {
     background: var(--cream);
-    padding: 120px 7% 85px;
+    padding: 120px 7% 100px;
 }
 
 .contact-intro h1 {
@@ -592,42 +608,140 @@ footer {
     font-style: italic;
 }
 
-.contact-button-container {
-    margin-top: 30px;
-    text-align: center;
-}
 
-.contact-details {
-    background: white;
-    padding: 0 7% 105px;
-    text-align: center;
-}
+/* DATOS DE CONTACTO */
 
-.contact-info {
-    max-width: 950px;
-    margin: 0 auto;
-    padding-top: 0;
+.contact-intro .contact-info {
+    max-width: 1000px;
+    margin: 45px auto 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
 }
 
-.contact-info a {
+.contact-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
     color: var(--dark);
     text-decoration: none;
-    font-size: 1rem;
     transition: .25s;
-    white-space: nowrap;
 }
 
-.contact-info a:hover {
+.contact-item:hover {
     color: var(--burgundy);
 }
 
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+}
 
-/* IMÁGENES */
+.contact-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-icon svg path:first-child {
+    fill: currentColor;
+    stroke: none;
+}
+
+.contact-item span {
+    font-family: Arial, sans-serif;
+    font-size: .9rem;
+    letter-spacing: .02em;
+    text-align: center;
+}
+
+
+/* BOTÓN PRESUPUESTO */
+
+.contact-button-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-button-container .repertoire-button {
+    background: var(--burgundy) !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+.contact-button-container .repertoire-button:hover {
+    background: var(--dark) !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   MOMENTOS VILÀTRIO
+   ========================================================= */
+
+.vilatrio-moments {
+    background: white;
+    padding: 100px 7% 110px;
+}
+
+.vilatrio-moments .section-head {
+    max-width: 760px;
+}
+
+.vilatrio-moments .section-head h2 {
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.vilatrio-moments .section-head > p {
+    margin-bottom: 55px;
+}
+
+
+/* GALERÍA */
+
+.moments-gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.moment-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #e8e1d8;
+}
+
+.moment-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.moment-photo:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   IMÁGENES
+   ========================================================= */
 
 .about-image img {
     width: 100%;
@@ -638,7 +752,9 @@ footer {
 }
 
 
-/* BODAS */
+/* =========================================================
+   BODAS
+   ========================================================= */
 
 .wedding-intro {
     background: var(--cream);
@@ -694,7 +810,9 @@ footer {
 }
 
 
-/* MOMENTOS DE BODA */
+/* =========================================================
+   MOMENTOS DE BODA
+   ========================================================= */
 
 .wedding-moments {
     background: #ece5dc;
@@ -742,7 +860,9 @@ footer {
 }
 
 
-/* EVENTOS */
+/* =========================================================
+   EVENTOS
+   ========================================================= */
 
 .event-moments {
     background: #ece5dc;
@@ -756,7 +876,9 @@ footer {
 }
 
 
-/* TEXTO GENERAL */
+/* =========================================================
+   TEXTO GENERAL
+   ========================================================= */
 
 .about-content p,
 .section-head p,
@@ -768,7 +890,9 @@ footer {
 }
 
 
-/* RESPONSIVE */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width:800px) {
 
@@ -792,6 +916,9 @@ footer {
         padding: 5px;
     }
 
+
+    /* PORTADA */
+
     .hero {
         min-height: calc(100vh - 60px);
         padding: 80px 6%;
@@ -805,6 +932,7 @@ footer {
         font-size: .7rem;
         letter-spacing: .2em;
     }
+
 
     section {
         padding: 75px 6%;
@@ -957,22 +1085,56 @@ footer {
     /* CONTACTO */
 
     .contact-intro {
-        padding: 85px 6% 65px;
+        padding: 85px 6% 75px;
     }
 
-    .contact-details {
-        padding: 0 6% 75px;
-    }
-
-    .contact-info {
+    .contact-intro .contact-info {
         flex-direction: column;
-        gap: 16px;
+        align-items: center;
+        gap: 32px;
+        margin-top: 40px;
     }
 
-    .contact-info a {
-        white-space: normal;
-        font-size: .95rem;
-        text-align: center;
+    .contact-item {
+        width: 100%;
+    }
+
+    .contact-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .contact-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-item span {
+        font-size: .9rem;
+    }
+
+    .contact-button-container {
+        margin-top: 38px;
+    }
+
+
+    /* MOMENTOS VILÀTRIO */
+
+    .vilatrio-moments {
+        padding: 75px 6% 85px;
+    }
+
+    .vilatrio-moments .section-head > p {
+        margin-bottom: 40px;
+    }
+
+    .moments-gallery {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .moment-photo {
+        aspect-ratio: 4 / 3;
     }
 
 
@@ -1033,210 +1195,5 @@ footer {
     .event-moments .wedding-moment-list {
         grid-template-columns: 1fr;
     }
-}
-```
-```css
-/* =========================================================
-   MOMENTOS VILÀTRIO
-   ========================================================= */
-
-.vilatrio-moments {
-    background: white;
-    padding: 100px 7% 110px;
-}
-
-.vilatrio-moments .section-head {
-    max-width: 760px;
-}
-
-.vilatrio-moments .section-head h2 {
-    margin-top: 12px;
-    margin-bottom: 18px;
-}
-
-.vilatrio-moments .section-head > p {
-    margin-bottom: 55px;
-}
-
-
-/* GALERÍA */
-
-.moments-gallery {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-}
-
-.moment-photo {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    background: #e8e1d8;
-}
-
-.moment-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform .4s ease;
-}
-
-.moment-photo:hover img {
-    transform: scale(1.03);
-}
-
-
-/* =========================================================
-   CONTACTO
-   ========================================================= */
-
-.contact-intro {
-    background: var(--cream);
-    padding: 120px 7% 85px;
-}
-
-.contact-intro h1 {
-    font-size: clamp(3.5rem, 8vw, 6rem);
-    color: var(--dark);
-    font-weight: 400;
-    letter-spacing: .03em;
-    margin-bottom: 18px;
-}
-
-.contact-intro .section-head p {
-    font-size: 1.2rem;
-    color: #575052;
-    font-style: italic;
-}
-
-.contact-button-container {
-    margin-top: 30px;
-    text-align: center;
-}
-
-
-/* DATOS DE CONTACTO */
-
-.contact-details {
-    background: var(--cream);
-    padding: 30px 7% 110px;
-    text-align: center;
-}
-
-.contact-info {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 90px;
-}
-
-.contact-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    color: var(--dark);
-    text-decoration: none;
-    transition: .25s;
-}
-
-.contact-item:hover {
-    color: var(--burgundy);
-}
-
-.contact-icon {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gold);
-}
-
-.contact-icon svg {
-    width: 30px;
-    height: 30px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.contact-icon svg path:first-child {
-    fill: currentColor;
-    stroke: none;
-}
-
-.contact-item span {
-    font-family: Arial, sans-serif;
-    font-size: .9rem;
-    letter-spacing: .02em;
-    text-align: center;
-}
-
-
-/* =========================================================
-   MÓVIL
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-    .vilatrio-moments {
-        padding: 75px 6% 85px;
-    }
-
-    .vilatrio-moments .section-head > p {
-        margin-bottom: 40px;
-    }
-
-    .moments-gallery {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-
-    .moment-photo {
-        aspect-ratio: 4 / 3;
-    }
-
-
-    .contact-intro {
-        padding: 85px 6% 65px;
-    }
-
-    .contact-details {
-        padding: 30px 6% 80px;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .contact-item {
-        width: 100%;
-    }
-
-    .contact-icon {
-        width: 38px;
-        height: 38px;
-    }
-
-    .contact-icon svg {
-        width: 28px;
-        height: 28px;
-    }
-
-    .contact-item span {
-        font-size: .9rem;
-    }
-
 }
 ```
