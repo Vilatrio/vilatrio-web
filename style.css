@@ -1,3 +1,4 @@
+```css
 :root {
     --cream: #f7f3ec;
     --dark: #211f20;
@@ -611,15 +612,44 @@ footer {
 }
 
 
+/* BOTÓN PRESUPUESTO */
+
+.contact-budget {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.contact-budget a {
+    display: inline-block;
+    background: var(--burgundy);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 17px 34px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.2;
+    border: none;
+    transition: .25s;
+}
+
+.contact-budget a:hover {
+    background: var(--dark);
+    color: #ffffff;
+}
+
+
 /* DATOS DE CONTACTO */
 
 .contact-intro .contact-info {
-    max-width: 1000px;
-    margin: 45px auto 0;
+    max-width: 1050px;
+    margin: 75px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 100px;
+    gap: 80px;
 }
 
 .contact-item {
@@ -656,7 +686,6 @@ footer {
     stroke-linejoin: round;
 }
 
-/* El icono del teléfono necesita relleno */
 .contact-icon svg path:first-child {
     fill: currentColor;
     stroke: none;
@@ -667,37 +696,6 @@ footer {
     font-size: .9rem;
     letter-spacing: .02em;
     text-align: center;
-}
-
-
-/* =========================================================
-   BOTÓN SOLICITAR PRESUPUESTO
-   ========================================================= */
-
-.contact-budget {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.contact-budget a {
-    display: inline-block;
-    background: var(--burgundy);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 17px 34px;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .13em;
-    font-size: .8rem;
-    font-weight: bold;
-    line-height: 1.2;
-    border: none;
-    transition: .25s;
-}
-
-.contact-budget a:hover {
-    background: var(--dark);
-    color: #ffffff;
 }
 
 
@@ -751,7 +749,6 @@ footer {
     color: #8a7d7f;
 }
 
-/* Cuando pongamos fotos */
 .gallery-placeholder img {
     width: 100%;
     height: 100%;
@@ -917,8 +914,6 @@ footer {
 
 @media (max-width:800px) {
 
-    /* NAVEGACIÓN */
-
     nav {
         padding: 13px 4%;
         align-items: center;
@@ -956,8 +951,6 @@ footer {
         letter-spacing: .2em;
     }
 
-
-    /* GENERALES */
 
     section {
         padding: 75px 6%;
@@ -1107,9 +1100,7 @@ footer {
     }
 
 
-    /* =====================================================
-       CONTACTO
-       ===================================================== */
+    /* CONTACTO */
 
     .contact-intro {
         padding: 85px 6% 75px;
@@ -1150,9 +1141,7 @@ footer {
     }
 
 
-    /* =====================================================
-       MOMENTOS VILÀTRIO
-       ===================================================== */
+    /* MOMENTOS VILÀTRIO */
 
     .moments {
         padding: 75px 6% 85px;
@@ -1172,9 +1161,7 @@ footer {
     }
 
 
-    /* =====================================================
-       BODAS
-       ===================================================== */
+    /* BODAS */
 
     .wedding-intro {
         padding: 85px 6% 60px;
@@ -1222,9 +1209,7 @@ footer {
     }
 
 
-    /* =====================================================
-       EVENTOS
-       ===================================================== */
+    /* EVENTOS */
 
     .event-moments {
         padding: 75px 6% 85px;
@@ -1234,3 +1219,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+```
