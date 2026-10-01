@@ -1,1398 +1,1386 @@
 :root {
---cream: #f7f3ec;
---dark: #211f20;
---burgundy: #6b3d4b;
---gold: #b59a67;
---white: #ffffff;
+    --cream: #f7f3ec;
+    --dark: #211f20;
+    --burgundy: #6b3d4b;
+    --gold: #b59a67;
+    --white: #ffffff;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-font-family: Georgia, "Times New Roman", serif;
-color: var(--dark);
-background: var(--cream);
-line-height: 1.6;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height: 1.6;
 }
 
+
 /* =========================================================
-NAVEGACIÓN
-========================================================= */
+   NAVEGACIÓN
+   ========================================================= */
 
 nav {
-position: sticky;
-top: 0;
-z-index: 100;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 18px 6%;
-background: rgba(247, 243, 236, 0.96);
-backdrop-filter: blur(10px);
-border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: rgba(247, 243, 236, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
 }
 
 .logo {
-font-size: 1.45rem;
-letter-spacing: 0.18em;
-color: var(--dark);
-font-weight: bold;
-text-decoration: none;
+    font-size: 1.45rem;
+    letter-spacing: 0.18em;
+    color: var(--dark);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .tabs {
-display: flex;
-gap: 4px;
-flex-wrap: wrap;
-justify-content: flex-end;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .tabs a {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: 0.08em;
-font-size: 0.65rem;
-color: var(--dark);
-text-decoration: none;
-padding: 8px 11px;
-border-bottom: 1px solid transparent;
-transition: 0.25s;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.65rem;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 8px 11px;
+    border-bottom: 1px solid transparent;
+    transition: 0.25s;
 }
 
 .tabs a:hover,
 .tabs a.active {
-color: var(--burgundy);
-border-bottom-color: var(--gold);
+    color: var(--burgundy);
+    border-bottom-color: var(--gold);
 }
 
+
 /* =========================================================
-PORTADA
-========================================================= */
+   PORTADA
+   ========================================================= */
 
 .hero {
-min-height: calc(100vh - 72px);
-display: grid;
-place-items: center;
-text-align: center;
-padding: 100px 7%;
-position: relative;
-overflow: hidden;
+    min-height: calc(100vh - 72px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 100px 7%;
+    position: relative;
+    overflow: hidden;
 
-```
-background-image:
-    linear-gradient(rgba(20,18,18,.38), rgba(20,18,18,.38)),
-    url("hero.jpg");
+    background-image:
+        linear-gradient(rgba(20,18,18,.38), rgba(20,18,18,.38)),
+        url("hero.jpg");
 
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-color: white;
-```
-
+    color: white;
 }
 
 .hero-content {
-position: relative;
-z-index: 5;
+    position: relative;
+    z-index: 5;
 }
 
 .hero-logo {
-font-size: clamp(4rem, 11vw, 8rem);
-line-height: .9;
-letter-spacing: .1em;
-font-weight: normal;
-margin-bottom: 22px;
-text-shadow: 0 2px 18px rgba(0,0,0,.25);
+    font-size: clamp(4rem, 11vw, 8rem);
+    line-height: .9;
+    letter-spacing: .1em;
+    font-weight: normal;
+    margin-bottom: 22px;
+    text-shadow: 0 2px 18px rgba(0,0,0,.25);
 }
 
 .hero-subtitle {
-font-family: Arial, sans-serif;
-font-size: clamp(.9rem,2vw,1.15rem);
-text-transform: uppercase;
-letter-spacing: .28em;
-margin-bottom: 35px;
-text-shadow: 0 2px 10px rgba(0,0,0,.3);
+    font-family: Arial, sans-serif;
+    font-size: clamp(.9rem,2vw,1.15rem);
+    text-transform: uppercase;
+    letter-spacing: .28em;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 10px rgba(0,0,0,.3);
 }
 
+
 /* =========================================================
-BOTÓN GENERAL
-========================================================= */
+   BOTÓN GENERAL
+   ========================================================= */
 
 .btn {
-display: inline-block !important;
-position: relative;
-z-index: 20;
+    display: inline-block !important;
+    position: relative;
+    z-index: 20;
 
-```
-background: var(--white) !important;
-color: var(--dark) !important;
+    background: var(--white) !important;
+    color: var(--dark) !important;
 
-text-decoration: none !important;
-padding: 14px 27px;
+    text-decoration: none !important;
+    padding: 14px 27px;
 
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .1em;
-font-size: .7rem;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .7rem;
 
-border: none;
-cursor: pointer;
+    border: none;
+    cursor: pointer;
 
-opacity: 1 !important;
-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 
-transition: .25s;
-```
-
+    transition: .25s;
 }
 
 .btn:hover {
-background: var(--burgundy) !important;
-color: white !important;
+    background: var(--burgundy) !important;
+    color: white !important;
 }
 
+
 /* =========================================================
-GENERALES
-========================================================= */
+   GENERALES
+   ========================================================= */
 
 section {
-padding: 100px 7%;
+    padding: 100px 7%;
 }
 
 .section-head {
-max-width: 760px;
-margin: 0 auto;
-text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .section-head h2 {
-font-size: clamp(2rem,4.5vw,3.2rem);
-font-weight: normal;
-color: var(--dark);
-margin-bottom: 20px;
+    font-size: clamp(2rem,4.5vw,3.2rem);
+    font-weight: normal;
+    color: var(--dark);
+    margin-bottom: 20px;
 }
 
 .section-head p {
-font-size: 1.05rem;
-color: #575052;
-max-width: 650px;
-margin: auto;
+    font-size: 1.05rem;
+    color: #575052;
+    max-width: 650px;
+    margin: auto;
 }
 
 .eyebrow {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .2em;
-color: var(--gold);
-font-size: .7rem;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--gold);
+    font-size: .7rem;
 }
 
 footer {
-padding: 25px;
-background: var(--dark);
-color: #ddd6ce;
-text-align: center;
-font-family: Arial, sans-serif;
-font-size: .75rem;
+    padding: 25px;
+    background: var(--dark);
+    color: #ddd6ce;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: .75rem;
 }
 
+
 /* =========================================================
-NOSOTROS
-========================================================= */
+   NOSOTROS
+   ========================================================= */
 
 .about-intro {
-background: var(--cream);
-padding: 120px 7% 80px;
+    background: var(--cream);
+    padding: 120px 7% 80px;
 }
 
 .about-intro h1 {
-font-size: clamp(3.5rem,8vw,6rem);
-font-weight: 400;
-color: var(--dark);
-letter-spacing: .03em;
-margin-bottom: 18px;
+    font-size: clamp(3.5rem,8vw,6rem);
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: .03em;
+    margin-bottom: 18px;
 }
 
 .about-intro .section-head p {
-font-size: 1.2rem;
-color: #575052;
-font-style: italic;
+    font-size: 1.2rem;
+    color: #575052;
+    font-style: italic;
 }
 
 .about-image {
-width: 100%;
-padding: 0 7% 70px;
-background: var(--cream);
-display: flex;
-justify-content: center;
+    width: 100%;
+    padding: 0 7% 70px;
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
 }
 
 .about-image-placeholder {
-width: 100%;
-max-width: 1100px;
-height: 420px;
-background: #e8e1d8;
-display: grid;
-place-items: center;
+    width: 100%;
+    max-width: 1100px;
+    height: 420px;
+    background: #e8e1d8;
+    display: grid;
+    place-items: center;
 }
 
 .about-image-placeholder span {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .15em;
-font-size: .7rem;
-color: #8a7d7f;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .7rem;
+    color: #8a7d7f;
 }
 
 .about-text {
-background: white;
-padding: 100px 7% 55px;
+    background: white;
+    padding: 100px 7% 55px;
 }
 
 .about-text .about-content {
-max-width: 900px;
-margin: auto;
-text-align: center;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
 .about-text .about-content h2 {
-text-align: center;
-font-size: 2.2rem;
-font-weight: normal;
-color: var(--dark);
-letter-spacing: .08em;
-margin-bottom: 30px;
-text-transform: uppercase;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: var(--dark);
+    letter-spacing: .08em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .about-text .about-content p {
-color: var(--dark);
-font-size: 1.2rem;
-line-height: 1.9;
-letter-spacing: .01em;
-text-align: center;
-margin-bottom: 0;
+    color: var(--dark);
+    font-size: 1.2rem;
+    line-height: 1.9;
+    letter-spacing: .01em;
+    text-align: center;
+    margin-bottom: 0;
 }
 
+
 /* =========================================================
-MÚSICOS
-========================================================= */
+   MÚSICOS
+   ========================================================= */
 
 .musicians {
-background: white;
-padding: 30px 7% 115px;
+    background: white;
+    padding: 30px 7% 115px;
 }
 
 .musicians-list {
-max-width: 1050px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 60px;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
 }
 
 .musician {
-text-align: center;
+    text-align: center;
 }
 
 .musician-photo {
-width: 220px;
-height: 220px;
-margin: 0 auto 25px;
-border-radius: 50%;
-background: #e8e1d8;
-display: grid;
-place-items: center;
-overflow: hidden;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #e8e1d8;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
 .musician-photo span {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .15em;
-font-size: .65rem;
-color: #8a7d7f;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .65rem;
+    color: #8a7d7f;
 }
 
 .musician h3 {
-font-size: 1.4rem;
-font-weight: 400;
-color: var(--dark);
-margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 5px;
 }
 
 .musician p {
-font-family: Arial, sans-serif;
-font-size: .75rem;
-text-transform: uppercase;
-letter-spacing: .12em;
-color: var(--dark);
+    font-family: Arial, sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--dark);
 }
 
+
 /* =========================================================
-OPCIONES
-========================================================= */
+   OPCIONES
+   ========================================================= */
 
 .wedding-options,
 .event-options {
-background: var(--cream);
+    background: var(--cream);
 }
 
 .wedding-options .cards,
 .event-options .cards {
-max-width: 1100px;
-margin: 55px auto 0;
-display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 25px;
+    max-width: 1100px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
 }
 
 .wedding-options .card,
 .event-options .card {
-background: white;
-border: 1px solid rgba(181,154,103,.35);
-padding: 38px 30px;
-text-align: center;
+    background: white;
+    border: 1px solid rgba(181,154,103,.35);
+    padding: 38px 30px;
+    text-align: center;
 }
 
 .wedding-options .card h3,
 .event-options .card h3 {
-color: var(--burgundy);
-font-size: 1.35rem;
-font-weight: normal;
-margin-bottom: 12px;
+    color: var(--burgundy);
+    font-size: 1.35rem;
+    font-weight: normal;
+    margin-bottom: 12px;
 }
 
 .wedding-options .card p,
 .event-options .card p {
-color: #575052;
-font-size: .95rem;
+    color: #575052;
+    font-size: .95rem;
 }
 
 .repertoire-link {
-background: white;
-text-align: center;
+    background: white;
+    text-align: center;
 }
 
+
 /* =========================================================
-REPERTORIO ANTIGUO
-========================================================= */
+   REPERTORIO ANTIGUO
+   ========================================================= */
 
 .repertoire-categories {
-background: #ece5dc;
+    background: #ece5dc;
 }
 
 .repertoire-list {
-max-width: 1050px;
-margin: 55px auto 0;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 0;
-border-top: 1px solid rgba(181,154,103,.4);
+    max-width: 1050px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+    border-top: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list > div {
-padding: 40px 45px;
-border-bottom: 1px solid rgba(181,154,103,.4);
+    padding: 40px 45px;
+    border-bottom: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list > div:nth-child(odd) {
-border-right: 1px solid rgba(181,154,103,.4);
+    border-right: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list h3 {
-font-size: 1.5rem;
-font-weight: normal;
-color: var(--burgundy);
-margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--burgundy);
+    margin-bottom: 12px;
 }
 
 .repertoire-list p {
-color: #575052;
-font-size: 1rem;
-max-width: 430px;
+    color: #575052;
+    font-size: 1rem;
+    max-width: 430px;
 }
 
 .dossier-link {
-background: var(--cream);
-text-align: center;
+    background: var(--cream);
+    text-align: center;
 }
 
+
 /* =========================================================
-REPERTORIO
-========================================================= */
+   REPERTORIO
+   ========================================================= */
 
 .repertoire-intro {
-background: var(--cream);
-padding: 120px 7% 80px;
+    background: var(--cream);
+    padding: 120px 7% 80px;
 }
 
 .repertoire-intro h1 {
-font-size: clamp(3.5rem,8vw,6rem);
-font-weight: 400;
-color: var(--dark);
-letter-spacing: .03em;
-margin-bottom: 18px;
+    font-size: clamp(3.5rem,8vw,6rem);
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: .03em;
+    margin-bottom: 18px;
 }
 
 .repertoire-intro .section-head p {
-font-size: 1.2rem;
-color: #575052;
-font-style: italic;
+    font-size: 1.2rem;
+    color: #575052;
+    font-style: italic;
 }
 
 .repertoire-button-container {
-display: block;
-margin-top: 30px;
-text-align: center;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .repertoire-button {
-display: inline-block !important;
-position: relative;
-z-index: 20;
+    display: inline-block !important;
+    position: relative;
+    z-index: 20;
 
-```
-background: var(--burgundy) !important;
-color: #ffffff !important;
+    background: var(--burgundy) !important;
+    color: #ffffff !important;
 
-text-decoration: none !important;
-padding: 17px 34px;
+    text-decoration: none !important;
+    padding: 17px 34px;
 
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .13em;
-font-size: .8rem;
-font-weight: bold;
-line-height: 1.2;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.2;
 
-border: none;
-cursor: pointer;
+    border: none;
+    cursor: pointer;
 
-opacity: 1 !important;
-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 
-transition: .25s;
-```
-
+    transition: .25s;
 }
 
 .repertoire-button:hover {
-background: var(--dark) !important;
-color: #ffffff !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
 }
 
+
 /* =========================================================
-REPERTORIO DE BODA
-========================================================= */
+   REPERTORIO DE BODA
+   ========================================================= */
 
 .wedding-repertoire {
-background: #ece5dc;
-padding: 105px 7% 115px;
+    background: #ece5dc;
+    padding: 105px 7% 115px;
 }
 
 .wedding-repertoire .section-head {
-max-width: 760px;
+    max-width: 760px;
 }
 
 .wedding-repertoire .section-head h2 {
-margin-top: 12px;
-margin-bottom: 18px;
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 .wedding-repertoire .section-head > p {
-margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .wedding-repertoire-list {
-max-width: 650px;
-margin: 0 auto;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .wedding-repertoire-item {
-padding: 24px 10px;
-border-bottom: 1px solid rgba(181,154,103,.4);
-text-align: center;
+    padding: 24px 10px;
+    border-bottom: 1px solid rgba(181,154,103,.4);
+    text-align: center;
 }
 
 .wedding-repertoire-item h3 {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .12em;
-font-size: .7rem;
-font-weight: bold;
-color: var(--gold);
-margin-bottom: 10px;
-text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: .7rem;
+    font-weight: bold;
+    color: var(--gold);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .wedding-song {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 35px;
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
 }
 
 .wedding-song em {
-font-style: normal;
-color: var(--burgundy);
-font-size: 1.2rem;
+    font-style: normal;
+    color: var(--burgundy);
+    font-size: 1.2rem;
 }
 
 .wedding-song span {
-color: #575052;
-text-align: left;
-font-size: 1rem;
+    color: #575052;
+    text-align: left;
+    font-size: 1rem;
 }
 
+
 /* =========================================================
-REPERTORIO DE EVENTOS
-========================================================= */
+   REPERTORIO DE EVENTOS
+   ========================================================= */
 
 .event-repertoire {
-background: white;
-padding: 105px 7% 115px;
+    background: white;
+    padding: 105px 7% 115px;
 }
 
 .event-repertoire .section-head {
-max-width: 760px;
+    max-width: 760px;
 }
 
 .event-repertoire .section-head h2 {
-margin-top: 12px;
-margin-bottom: 18px;
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 .event-repertoire .section-head > p {
-margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .event-repertoire-list {
-max-width: 650px;
-margin: 0 auto;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .event-repertoire-list p {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 35px;
-padding: 17px 10px;
-color: #575052;
-font-size: 1rem;
-line-height: 1.6;
-border-bottom: 1px solid rgba(181,154,103,.25);
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 17px 10px;
+    color: #575052;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(181,154,103,.25);
+    text-align: center;
 }
 
 .event-repertoire-list p em,
 .event-repertoire-list p span {
-width: 190px;
+    width: 190px;
 }
 
 .event-repertoire-list p em {
-font-style: normal;
-color: var(--burgundy);
-text-align: right;
+    font-style: normal;
+    color: var(--burgundy);
+    text-align: right;
 }
 
 .event-repertoire-list p span {
-color: #575052;
-text-align: left;
+    color: #575052;
+    text-align: left;
 }
 
+
 /* =========================================================
-CANCIÓN ESPECIAL
-========================================================= */
+   CANCIÓN ESPECIAL
+   ========================================================= */
 
 .special-song {
-background: var(--cream);
-padding: 65px 7% 75px;
-text-align: center;
-border-top: 1px solid rgba(181,154,103,.2);
+    background: var(--cream);
+    padding: 65px 7% 75px;
+    text-align: center;
+    border-top: 1px solid rgba(181,154,103,.2);
 }
 
 .special-song-content {
-max-width: 700px;
-margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .special-song h3 {
-font-size: 1.35rem;
-font-weight: normal;
-color: var(--burgundy);
-margin-bottom: 12px;
+    font-size: 1.35rem;
+    font-weight: normal;
+    color: var(--burgundy);
+    margin-bottom: 12px;
 }
 
 .special-song p {
-max-width: 650px;
-margin: 0 auto;
-color: #575052;
-font-size: 1rem;
-line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #575052;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
+
 /* =========================================================
-CONTACTO
-========================================================= */
+   CONTACTO
+   ========================================================= */
 
 .contact-intro {
-background: var(--cream);
-padding: 120px 7% 100px;
+    background: var(--cream);
+    padding: 120px 7% 100px;
 }
 
 .contact-intro h1 {
-font-size: clamp(3.5rem, 8vw, 6rem);
-color: var(--dark);
-font-weight: 400;
-letter-spacing: .03em;
-margin-bottom: 18px;
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    color: var(--dark);
+    font-weight: 400;
+    letter-spacing: .03em;
+    margin-bottom: 18px;
 }
 
 .contact-intro .section-head p {
-font-size: 1.2rem;
-color: #575052;
-font-style: italic;
+    font-size: 1.2rem;
+    color: #575052;
+    font-style: italic;
 }
 
 .contact-budget {
-display: block;
-margin-top: 35px;
-text-align: center;
-position: relative;
-z-index: 20;
+    display: block;
+    margin-top: 35px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
 }
 
 .contact-budget a {
-display: inline-block !important;
-position: relative;
-z-index: 20;
+    display: inline-block !important;
+    position: relative;
+    z-index: 20;
 
-```
-background: var(--burgundy) !important;
-color: #ffffff !important;
+    background: var(--burgundy) !important;
+    color: #ffffff !important;
 
-text-decoration: none !important;
-padding: 17px 34px;
+    text-decoration: none !important;
+    padding: 17px 34px;
 
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .13em;
-font-size: .8rem;
-font-weight: bold;
-line-height: 1.2;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.2;
 
-border: none;
-cursor: pointer;
+    border: none;
+    cursor: pointer;
 
-opacity: 1 !important;
-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 
-transition: .25s;
-```
-
+    transition: .25s;
 }
 
 .contact-budget a:hover {
-background: var(--dark) !important;
-color: #ffffff !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
 }
 
 .contact-intro .contact-info {
-max-width: 1050px;
-margin: 75px auto 0;
+    max-width: 1050px;
+    margin: 75px auto 0;
 
-```
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-gap: 80px;
-```
-
+    gap: 80px;
 }
 
 .contact-item {
-flex: 1;
+    flex: 1;
 
-```
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-gap: 14px;
+    gap: 14px;
 
-color: var(--dark);
-text-decoration: none;
+    color: var(--dark);
+    text-decoration: none;
 
-transition: .25s;
-```
-
+    transition: .25s;
 }
 
 .contact-item:hover {
-color: var(--burgundy);
+    color: var(--burgundy);
 }
 
 .contact-icon {
-width: 42px;
-height: 42px;
+    width: 42px;
+    height: 42px;
 
-```
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-color: var(--gold);
-```
-
+    color: var(--gold);
 }
 
 .contact-icon svg {
-width: 30px;
-height: 30px;
+    width: 30px;
+    height: 30px;
 
-```
-fill: none;
-stroke: currentColor;
-stroke-width: 1.5;
-stroke-linecap: round;
-stroke-linejoin: round;
-```
-
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .contact-icon svg path:first-child {
-fill: currentColor;
-stroke: none;
+    fill: currentColor;
+    stroke: none;
 }
 
 .contact-item span {
-font-family: Arial, sans-serif;
-font-size: .9rem;
-letter-spacing: .02em;
-text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: .9rem;
+    letter-spacing: .02em;
+    text-align: center;
 }
 
+
 /* =========================================================
-MOMENTOS VILÀTRIO
-========================================================= */
+   MOMENTOS VILÀTRIO
+   ========================================================= */
 
 .moments {
-background: #ece5dc;
-padding: 100px 7% 110px;
+    background: #ece5dc;
+    padding: 100px 7% 110px;
 }
 
 .moments .section-head {
-max-width: 760px;
+    max-width: 760px;
 }
 
 .moments .section-head h2 {
-margin-top: 12px;
-margin-bottom: 18px;
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 .moments .section-head > p {
-margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .gallery {
-max-width: 1100px;
-margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto;
 
-```
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-gap: 20px;
-```
-
+    gap: 20px;
 }
 
 .gallery-placeholder {
-min-height: 330px;
+    min-height: 330px;
 
-```
-background: rgba(255, 255, 255, .55);
-border: 1px solid rgba(181, 154, 103, .4);
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(181, 154, 103, .4);
 
-display: grid;
-place-items: center;
+    display: grid;
+    place-items: center;
 
-overflow: hidden;
-```
-
+    overflow: hidden;
 }
 
 .gallery-placeholder span {
-font-family: Arial, sans-serif;
-text-transform: uppercase;
-letter-spacing: .15em;
-font-size: .7rem;
-color: #8a7d7f;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .7rem;
+    color: #8a7d7f;
 }
 
 .gallery-placeholder img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
+
 /* =========================================================
-BODAS
-========================================================= */
+   BODAS
+   ========================================================= */
 
 .wedding-intro {
-background: var(--cream);
-padding: 120px 7% 80px;
+    background: var(--cream);
+    padding: 120px 7% 80px;
 }
 
 .wedding-intro h1 {
-font-size: clamp(3.5rem,8vw,6rem);
-font-weight: 400;
-color: var(--dark);
-letter-spacing: .03em;
-margin-bottom: 18px;
+    font-size: clamp(3.5rem,8vw,6rem);
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: .03em;
+    margin-bottom: 18px;
 }
 
 .wedding-intro .section-head p {
-font-size: 1.2rem;
-color: #575052;
-font-style: italic;
+    font-size: 1.2rem;
+    color: #575052;
+    font-style: italic;
 }
 
 .wedding-image {
-width: 100%;
-padding: 0 7% 70px;
-background: var(--cream);
-display: flex;
-justify-content: center;
+    width: 100%;
+    padding: 0 7% 70px;
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
 }
 
 .wedding-image img {
-display: block;
-width: 100%;
-max-width: 1100px;
-height: 420px;
-object-fit: cover;
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: 420px;
+    object-fit: cover;
 }
 
 .wedding-introduction {
-background: white;
-padding: 100px 7%;
+    background: white;
+    padding: 100px 7%;
 }
 
 .wedding-introduction .about-content {
-max-width: 900px;
-margin: 0 auto;
-text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .wedding-introduction .about-content p {
-font-size: 1.25rem;
-line-height: 1.9;
-font-weight: 400;
-letter-spacing: .01em;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    font-weight: 400;
+    letter-spacing: .01em;
 }
 
+
 /* =========================================================
-MOMENTOS DE BODA
-========================================================= */
+   MOMENTOS DE BODA
+   ========================================================= */
 
 .wedding-moments {
-background: #ece5dc;
-padding: 105px 7% 115px;
-text-align: center;
+    background: #ece5dc;
+    padding: 105px 7% 115px;
+    text-align: center;
 }
 
 .wedding-moment-list {
-max-width: 1150px;
-margin: 0 auto;
+    max-width: 1150px;
+    margin: 0 auto;
 
-```
-display: grid;
-grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-gap: 65px;
-```
-
+    gap: 65px;
 }
 
 .wedding-moment {
-padding: 10px;
-text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 .wedding-moment h3 {
-font-size: 1.8rem;
-font-weight: bold;
-color: var(--burgundy);
-margin-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--burgundy);
+    margin-bottom: 18px;
 }
 
 .wedding-moment p {
-color: #575052;
-font-size: 1.1rem;
-line-height: 1.9;
+    color: #575052;
+    font-size: 1.1rem;
+    line-height: 1.9;
 }
 
-/* BOTÓN DE REPERTORIO EN BODAS */
 
-.wedding-moments .repertoire-button {
-margin-top: 55px;
+/* BOTÓN NUESTRO REPERTORIO */
+
+.wedding-repertoire-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
 }
+
+.wedding-repertoire-button .repertoire-button {
+    display: inline-block !important;
+}
+
 
 /* FRASE FINAL */
 
 .wedding-choice {
-max-width: 850px;
-margin: 30px auto 0;
-text-align: center;
+    max-width: 850px;
+    margin: 30px auto 0;
+    text-align: center;
 }
 
 .wedding-choice p {
-color: #575052;
-font-size: 1.15rem;
-line-height: 1.9;
-font-style: italic;
+    color: #575052;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-style: italic;
 }
 
+
 /* =========================================================
-EVENTOS
-========================================================= */
+   EVENTOS
+   ========================================================= */
 
 .event-moments {
-background: #ece5dc;
-padding: 105px 7% 115px;
-text-align: center;
+    background: #ece5dc;
+    padding: 105px 7% 115px;
+    text-align: center;
 }
 
 .event-moments .wedding-moment-list {
-grid-template-columns: repeat(2,1fr);
-max-width: 900px;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 900px;
 }
 
+
 /* =========================================================
-TEXTO GENERAL
-========================================================= */
+   TEXTO GENERAL
+   ========================================================= */
 
 .about-content p,
 .section-head p,
 .wedding-moment p,
 .repertoire-list p {
-font-weight: 400;
-line-height: 1.9;
-letter-spacing: .01em;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: .01em;
 }
 
+
 /* =========================================================
-INICIO
-========================================================= */
+   INICIO
+   ========================================================= */
 
 .home-links {
-background: var(--cream);
+    background: var(--cream);
 
-```
-padding: 65px 7% 75px;
+    padding: 65px 7% 75px;
 
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-gap: 30px;
+    gap: 30px;
 
-max-width: 1200px;
-margin: 0 auto;
-```
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .home-link {
-min-height: 150px;
+    min-height: 150px;
 
-```
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-background: white;
+    background: white;
 
-border: 1px solid rgba(181, 154, 103, .45);
+    border: 1px solid rgba(181, 154, 103, .45);
 
-color: var(--burgundy);
-text-decoration: none;
+    color: var(--burgundy);
+    text-decoration: none;
 
-font-family: Georgia, "Times New Roman", serif;
-font-size: 2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
 
-transition: .3s;
-```
-
+    transition: .3s;
 }
 
 .home-link:hover {
-background: var(--burgundy);
-color: white;
-border-color: var(--burgundy);
+    background: var(--burgundy);
+    color: white;
+    border-color: var(--burgundy);
 }
 
 .home-link span {
-transition: .3s;
+    transition: .3s;
 }
 
+
 /* =========================================================
-RESPONSIVE
-========================================================= */
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width:800px) {
 
-```
-nav {
-    padding: 13px 4%;
-    align-items: center;
-    gap: 10px;
-}
+    nav {
+        padding: 13px 4%;
+        align-items: center;
+        gap: 10px;
+    }
 
-.logo {
-    font-size: 1rem;
-    flex-shrink: 0;
-}
+    .logo {
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
 
-.tabs {
-    gap: 1px;
-}
+    .tabs {
+        gap: 1px;
+    }
 
-.tabs a {
-    font-size: .5rem;
-    padding: 5px;
-}
+    .tabs a {
+        font-size: .5rem;
+        padding: 5px;
+    }
 
 
-/* PORTADA */
+    /* PORTADA */
 
-.hero {
-    min-height: calc(100vh - 60px);
-    padding: 80px 6%;
-}
+    .hero {
+        min-height: calc(100vh - 60px);
+        padding: 80px 6%;
+    }
 
-.hero-logo {
-    font-size: clamp(3rem,15vw,5rem);
-}
+    .hero-logo {
+        font-size: clamp(3rem,15vw,5rem);
+    }
 
-.hero-subtitle {
-    font-size: .7rem;
-    letter-spacing: .2em;
-}
+    .hero-subtitle {
+        font-size: .7rem;
+        letter-spacing: .2em;
+    }
 
-.btn {
-    padding: 15px 25px;
-    font-size: .7rem;
-}
+    .btn {
+        padding: 15px 25px;
+        font-size: .7rem;
+    }
 
 
-/* GENERALES */
+    /* GENERALES */
 
-section {
-    padding: 75px 6%;
-}
+    section {
+        padding: 75px 6%;
+    }
 
 
-/* NOSOTROS */
+    /* NOSOTROS */
 
-.about-intro {
-    padding: 85px 6% 60px;
-}
+    .about-intro {
+        padding: 85px 6% 60px;
+    }
 
-.about-image {
-    padding: 0 6% 65px;
-}
+    .about-image {
+        padding: 0 6% 65px;
+    }
 
-.about-image-placeholder {
-    height: 360px;
-}
+    .about-image-placeholder {
+        height: 360px;
+    }
 
-.about-text {
-    padding: 75px 6% 40px;
-}
+    .about-text {
+        padding: 75px 6% 40px;
+    }
 
-.about-text .about-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-}
+    .about-text .about-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
 
-.about-text .about-content p {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 0;
-}
+    .about-text .about-content p {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
 
-.musicians {
-    padding: 20px 6% 85px;
-}
+    .musicians {
+        padding: 20px 6% 85px;
+    }
 
-.musicians-list {
-    grid-template-columns: 1fr;
-    gap: 45px;
-}
+    .musicians-list {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
 
-.musician-photo {
-    width: 190px;
-    height: 190px;
-}
+    .musician-photo {
+        width: 190px;
+        height: 190px;
+    }
 
 
-/* OPCIONES */
+    /* OPCIONES */
 
-.wedding-options .cards,
-.event-options .cards {
-    grid-template-columns: 1fr;
-    margin-top: 40px;
-}
+    .wedding-options .cards,
+    .event-options .cards {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
 
 
-/* REPERTORIO ANTIGUO */
+    /* REPERTORIO ANTIGUO */
 
-.repertoire-list {
-    grid-template-columns: 1fr;
-}
+    .repertoire-list {
+        grid-template-columns: 1fr;
+    }
 
-.repertoire-list > div {
-    padding: 32px 10px;
-}
+    .repertoire-list > div {
+        padding: 32px 10px;
+    }
 
-.repertoire-list > div:nth-child(odd) {
-    border-right: none;
-}
+    .repertoire-list > div:nth-child(odd) {
+        border-right: none;
+    }
 
 
-/* REPERTORIO */
+    /* REPERTORIO */
 
-.repertoire-intro {
-    padding: 85px 6% 60px;
-}
+    .repertoire-intro {
+        padding: 85px 6% 60px;
+    }
 
-.repertoire-intro h1 {
-    font-size: clamp(3rem,12vw,5rem);
-}
+    .repertoire-intro h1 {
+        font-size: clamp(3rem,12vw,5rem);
+    }
 
-.repertoire-button-container {
-    margin-top: 28px;
-}
+    .repertoire-button-container {
+        margin-top: 28px;
+    }
 
-.repertoire-button {
-    padding: 16px 28px;
-    font-size: .75rem;
-}
+    .repertoire-button {
+        padding: 16px 28px;
+        font-size: .75rem;
+    }
 
-.wedding-repertoire {
-    padding: 75px 6% 85px;
-}
+    .wedding-repertoire {
+        padding: 75px 6% 85px;
+    }
 
-.wedding-repertoire-list {
-    max-width: 550px;
-}
+    .wedding-repertoire-list {
+        max-width: 550px;
+    }
 
-.wedding-repertoire .section-head > p {
-    margin-bottom: 40px;
-}
+    .wedding-repertoire .section-head > p {
+        margin-bottom: 40px;
+    }
 
-.wedding-repertoire-item h3 {
-    margin-bottom: 9px;
-}
+    .wedding-repertoire-item h3 {
+        margin-bottom: 9px;
+    }
 
-.wedding-song {
-    gap: 20px;
-}
+    .wedding-song {
+        gap: 20px;
+    }
 
-.wedding-song em {
-    font-size: 1.1rem;
-}
+    .wedding-song em {
+        font-size: 1.1rem;
+    }
 
-.event-repertoire {
-    padding: 75px 6% 85px;
-}
+    .event-repertoire {
+        padding: 75px 6% 85px;
+    }
 
-.event-repertoire-list {
-    max-width: 550px;
-}
+    .event-repertoire-list {
+        max-width: 550px;
+    }
 
-.event-repertoire-list p {
-    gap: 20px;
-}
+    .event-repertoire-list p {
+        gap: 20px;
+    }
 
-.event-repertoire-list p em,
-.event-repertoire-list p span {
-    width: 145px;
-}
+    .event-repertoire-list p em,
+    .event-repertoire-list p span {
+        width: 145px;
+    }
 
-.event-repertoire-list p em {
-    text-align: right;
-}
+    .event-repertoire-list p em {
+        text-align: right;
+    }
 
-.event-repertoire-list p span {
-    text-align: left;
-}
+    .event-repertoire-list p span {
+        text-align: left;
+    }
 
-.special-song {
-    padding: 50px 6% 60px;
-}
+    .special-song {
+        padding: 50px 6% 60px;
+    }
 
-.special-song h3 {
-    font-size: 1.2rem;
-}
+    .special-song h3 {
+        font-size: 1.2rem;
+    }
 
-.special-song p {
-    font-size: .92rem;
-    line-height: 1.7;
-}
+    .special-song p {
+        font-size: .92rem;
+        line-height: 1.7;
+    }
 
 
-/* CONTACTO */
+    /* CONTACTO */
 
-.contact-intro {
-    padding: 85px 6% 75px;
-}
+    .contact-intro {
+        padding: 85px 6% 75px;
+    }
 
-.contact-intro .contact-info {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    margin-top: 40px;
-}
+    .contact-intro .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-top: 40px;
+    }
 
-.contact-item {
-    width: 100%;
-}
+    .contact-item {
+        width: 100%;
+    }
 
-.contact-icon {
-    width: 38px;
-    height: 38px;
-}
+    .contact-icon {
+        width: 38px;
+        height: 38px;
+    }
 
-.contact-icon svg {
-    width: 28px;
-    height: 28px;
-}
+    .contact-icon svg {
+        width: 28px;
+        height: 28px;
+    }
 
-.contact-item span {
-    font-size: .9rem;
-}
+    .contact-item span {
+        font-size: .9rem;
+    }
 
-.contact-budget {
-    margin-top: 38px;
-}
+    .contact-budget {
+        margin-top: 38px;
+    }
 
-.contact-budget a {
-    padding: 16px 28px;
-    font-size: .75rem;
-}
+    .contact-budget a {
+        padding: 16px 28px;
+        font-size: .75rem;
+    }
 
 
-/* MOMENTOS VILÀTRIO */
+    /* MOMENTOS VILÀTRIO */
 
-.moments {
-    padding: 75px 6% 85px;
-}
+    .moments {
+        padding: 75px 6% 85px;
+    }
 
-.moments .section-head > p {
-    margin-bottom: 40px;
-}
+    .moments .section-head > p {
+        margin-bottom: 40px;
+    }
 
-.gallery {
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-.gallery-placeholder {
-    min-height: 250px;
-}
+    .gallery-placeholder {
+        min-height: 250px;
+    }
 
 
-/* BODAS */
+    /* BODAS */
 
-.wedding-intro {
-    padding: 85px 6% 60px;
-}
+    .wedding-intro {
+        padding: 85px 6% 60px;
+    }
 
-.wedding-image {
-    padding: 0 6% 65px;
-}
+    .wedding-image {
+        padding: 0 6% 65px;
+    }
 
-.wedding-image img {
-    height: 360px;
-}
+    .wedding-image img {
+        height: 360px;
+    }
 
-.wedding-introduction {
-    padding: 75px 6%;
-}
+    .wedding-introduction {
+        padding: 75px 6%;
+    }
 
-.wedding-introduction .about-content p {
-    font-size: 1.1rem;
-}
+    .wedding-introduction .about-content p {
+        font-size: 1.1rem;
+    }
 
-.wedding-moments {
-    padding: 75px 6% 85px;
-}
+    .wedding-moments {
+        padding: 75px 6% 85px;
+    }
 
-.wedding-moment-list {
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
+    .wedding-moment-list {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 
-.wedding-moment {
-    padding: 10px;
-}
+    .wedding-moment {
+        padding: 10px;
+    }
 
-.wedding-moment h3 {
-    font-size: 1.6rem;
-}
+    .wedding-moment h3 {
+        font-size: 1.6rem;
+    }
 
-.wedding-moment p {
-    font-size: 1.05rem;
-}
+    .wedding-moment p {
+        font-size: 1.05rem;
+    }
 
-.wedding-moments .repertoire-button {
-    margin-top: 40px;
-}
+    .wedding-repertoire-button {
+        margin-top: 40px;
+    }
 
-.wedding-choice {
-    margin-top: 25px;
-}
+    .wedding-choice {
+        margin-top: 25px;
+    }
 
 
-/* EVENTOS */
+    /* EVENTOS */
 
-.event-moments {
-    padding: 75px 6% 85px;
-}
+    .event-moments {
+        padding: 75px 6% 85px;
+    }
 
-.event-moments .wedding-moment-list {
-    grid-template-columns: 1fr;
-}
+    .event-moments .wedding-moment-list {
+        grid-template-columns: 1fr;
+    }
 
 
-/* INICIO */
+    /* INICIO */
 
-.home-links {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 45px 6% 55px;
-}
+    .home-links {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 45px 6% 55px;
+    }
 
-.home-link {
-    min-height: 110px;
-    font-size: 1.7rem;
-}
-```
+    .home-link {
+        min-height: 110px;
+        font-size: 1.7rem;
+    }
 
 }
