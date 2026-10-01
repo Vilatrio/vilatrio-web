@@ -992,55 +992,6 @@ footer {
 
 
 /* =========================================================
-   INICIO
-   ========================================================= */
-
-.home-links {
-    background: var(--cream);
-
-    padding: 65px 7% 75px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.home-link {
-    min-height: 150px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: white;
-
-    border: 1px solid rgba(181, 154, 103, .45);
-
-    color: var(--burgundy);
-    text-decoration: none;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 2rem;
-
-    transition: .3s;
-}
-
-.home-link:hover {
-    background: var(--burgundy);
-    color: white;
-    border-color: var(--burgundy);
-}
-
-.home-link span {
-    transition: .3s;
-}
-
-
-/* =========================================================
    RESPONSIVE
    ========================================================= */
 
@@ -1367,20 +1318,6 @@ footer {
 
     .event-moments .wedding-moment-list {
         grid-template-columns: 1fr;
-    }
-
-
-    /* INICIO */
-
-    .home-links {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 45px 6% 55px;
-    }
-
-    .home-link {
-        min-height: 110px;
-        font-size: 1.7rem;
     }
 
 }
