@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 
@@ -14,8 +13,10 @@
 <nav>
     <a class="logo" href="index.html">VILÀTRIO</a>
 
-    <button class="menu-toggle" aria-label="Abrir menú">
-        ☰
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
 
     <div class="tabs">
@@ -58,10 +59,12 @@ const menuToggle = document.querySelector(".menu-toggle");
 const tabs = document.querySelector(".tabs");
 
 menuToggle.addEventListener("click", () => {
-    tabs.classList.toggle("open");
+    const isOpen = tabs.classList.toggle("open");
+
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen);
 });
 </script>
 
 </body>
 </html>
-```
