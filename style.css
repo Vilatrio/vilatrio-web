@@ -1029,22 +1029,22 @@ footer {
     }
 
     .tabs {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 6%;
+    left: auto;
+    width: 48%;
 
-        flex-direction: column;
-        gap: 0;
+    flex-direction: column;
+    gap: 0;
 
-        background: rgba(247, 243, 236, 0.98);
-        backdrop-filter: blur(10px);
+    background: rgba(247, 243, 236, 0.98);
+    backdrop-filter: blur(10px);
 
-        border-bottom: 1px solid rgba(181, 154, 103, 0.25);
-        box-shadow: 0 8px 20px rgba(33, 31, 32, 0.08);
-    }
-
+    border: 1px solid rgba(181, 154, 103, 0.25);
+    box-shadow: 0 8px 20px rgba(33, 31, 32, 0.10);
+}
     .tabs.open {
         display: flex;
     }
