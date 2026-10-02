@@ -1028,14 +1028,14 @@ footer {
         margin-left: auto;
     }
 
-    .tabs {
-    display: none;
+.tabs {
     position: absolute;
     top: 100%;
-    right: 0%;
+    right: 0;
     left: auto;
-    width: 48%;
+    width: 50%;
 
+    display: flex;
     flex-direction: column;
     gap: 0;
 
@@ -1044,11 +1044,62 @@ footer {
 
     border: 1px solid rgba(181, 154, 103, 0.25);
     box-shadow: 0 8px 20px rgba(33, 31, 32, 0.10);
-}
-    .tabs.open {
-        display: flex;
-    }
 
+    /* Estado cerrado */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.tabs.open {
+    /* Estado abierto */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+.tabs a {
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.tabs.open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tabs.open a:nth-child(1) {
+    transition-delay: 0.03s;
+}
+
+.tabs.open a:nth-child(2) {
+    transition-delay: 0.06s;
+}
+
+.tabs.open a:nth-child(3) {
+    transition-delay: 0.09s;
+}
+
+.tabs.open a:nth-child(4) {
+    transition-delay: 0.12s;
+}
+
+.tabs.open a:nth-child(5) {
+    transition-delay: 0.15s;
+}
+
+.tabs.open a:nth-child(6) {
+    transition-delay: 0.18s;
+}
     .tabs a {
         width: 100%;
         text-align: center;
