@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="es">
 
@@ -12,6 +13,10 @@
 
 <nav>
     <a class="logo" href="index.html">VILÀTRIO</a>
+
+    <button class="menu-toggle" aria-label="Abrir menú">
+        ☰
+    </button>
 
     <div class="tabs">
         <a class="active" href="index.html">Inicio</a>
@@ -48,5 +53,15 @@
     © 2026 VILÀTRIO · Música en directo
 </footer>
 
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const tabs = document.querySelector(".tabs");
+
+menuToggle.addEventListener("click", () => {
+    tabs.classList.toggle("open");
+});
+</script>
+
 </body>
 </html>
+```
