@@ -1,3 +1,4 @@
+```css
 :root {
     --cream: #f7f3ec;
     --dark: #211f20;
@@ -72,6 +73,18 @@ nav {
 .tabs a.active {
     color: var(--burgundy);
     border-bottom-color: var(--gold);
+}
+
+/* Botón del menú móvil */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 4px 2px;
 }
 
 
@@ -998,9 +1011,9 @@ footer {
 @media (max-width:800px) {
 
     nav {
-        padding: 13px 4%;
+        padding: 13px 6%;
         align-items: center;
-        gap: 10px;
+        position: sticky;
     }
 
     .logo {
@@ -1008,13 +1021,54 @@ footer {
         flex-shrink: 0;
     }
 
+    /* MENÚ MÓVIL */
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
     .tabs {
-        gap: 1px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        background: rgba(247, 243, 236, 0.98);
+        backdrop-filter: blur(10px);
+
+        border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+        box-shadow: 0 8px 20px rgba(33, 31, 32, 0.08);
+    }
+
+    .tabs.open {
+        display: flex;
     }
 
     .tabs a {
-        font-size: .5rem;
-        padding: 5px;
+        width: 100%;
+        text-align: center;
+
+        font-size: .65rem;
+        letter-spacing: .12em;
+
+        padding: 15px 20px;
+
+        border-bottom: 1px solid rgba(181, 154, 103, 0.15);
+    }
+
+    .tabs a:last-child {
+        border-bottom: none;
+    }
+
+    .tabs a:hover,
+    .tabs a.active {
+        background: rgba(181, 154, 103, 0.08);
+        border-bottom-color: rgba(181, 154, 103, 0.15);
     }
 
 
@@ -1321,3 +1375,4 @@ footer {
     }
 
 }
+```
