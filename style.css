@@ -1,4 +1,6 @@
-:root {
+body {
+    background: red !important;
+}
     --cream: red;
     --dark: blue;
     --burgundy: lime;
