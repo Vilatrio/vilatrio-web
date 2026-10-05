@@ -1,9 +1,9 @@
 :root {
-    --cream: #F4F1E8;
-    --dark: #34332F;
-    --burgundy: #7C8875;
-    --gold: #C7BDAA;
-    --white: #FFFFFF;
+    --cream: red;
+    --dark: blue;
+    --burgundy: lime;
+    --gold: yellow;
+    --white: white;
 }
 
 * {
