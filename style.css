@@ -1,6 +1,4 @@
-body {
-    background: red !important;
-}
+:root {
     --cream: red;
     --dark: blue;
     --burgundy: lime;
@@ -24,7 +22,6 @@ body {
     background: var(--cream);
     line-height: 1.6;
 }
-
 nav {
     position: sticky;
     top: 0;
