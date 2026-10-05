@@ -1,9 +1,9 @@
 :root {
-    --cream: red;
-    --dark: blue;
-    --burgundy: lime;
-    --gold: yellow;
-    --white: white;
+    --cream: #f7f3ec;
+    --dark: #211f20;
+    --burgundy: #6b3d4b;
+    --gold: #b59a67;
+    --white: #ffffff;
 }
 
 * {
@@ -22,6 +22,12 @@ body {
     background: var(--cream);
     line-height: 1.6;
 }
+
+
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
+
 nav {
     position: sticky;
     top: 0;
@@ -30,9 +36,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 18px 6%;
-    background: rgba(244, 241, 232, 0.96);
+    background: rgba(247, 243, 236, 0.96);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(199, 189, 170, 0.25);
+    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
 }
 
 .logo {
@@ -68,15 +74,21 @@ nav {
     border-bottom-color: var(--gold);
 }
 
+
+/* BOTÓN MENÚ MÓVIL */
+
 .menu-toggle {
     display: none;
     width: 22px;
     height: 22px;
     padding: 0;
     margin-left: auto;
+
     background: none;
     border: none;
+
     cursor: pointer;
+
     position: relative;
     z-index: 110;
 }
@@ -85,12 +97,18 @@ nav {
     display: block;
     width: 22px;
     height: 1.5px;
+
     background: var(--dark);
+
     margin: 4px 0;
+
     transition:
         transform 0.3s ease,
         opacity 0.2s ease;
 }
+
+
+/* ANIMACIÓN DEL BOTÓN → X */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(6.5px) rotate(45deg);
@@ -104,6 +122,11 @@ nav {
     transform: translateY(-6.5px) rotate(-45deg);
 }
 
+
+/* =========================================================
+   PORTADA
+   ========================================================= */
+
 .hero {
     min-height: calc(100vh - 72px);
     display: grid;
@@ -112,12 +135,15 @@ nav {
     padding: 100px 7%;
     position: relative;
     overflow: hidden;
+
     background-image:
         linear-gradient(rgba(20,18,18,.38), rgba(20,18,18,.38)),
         url("hero.jpg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     color: white;
 }
 
@@ -144,22 +170,33 @@ nav {
     text-shadow: 0 2px 10px rgba(0,0,0,.3);
 }
 
+
+/* =========================================================
+   BOTÓN GENERAL
+   ========================================================= */
+
 .btn {
     display: inline-block !important;
     position: relative;
     z-index: 20;
+
     background: var(--white) !important;
     color: var(--dark) !important;
+
     text-decoration: none !important;
     padding: 14px 27px;
+
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: .1em;
     font-size: .7rem;
+
     border: none;
     cursor: pointer;
+
     opacity: 1 !important;
     visibility: visible !important;
+
     transition: .25s;
 }
 
@@ -167,6 +204,11 @@ nav {
     background: var(--burgundy) !important;
     color: white !important;
 }
+
+
+/* =========================================================
+   GENERALES
+   ========================================================= */
 
 section {
     padding: 100px 7%;
@@ -187,7 +229,7 @@ section {
 
 .section-head p {
     font-size: 1.05rem;
-    color: #5B5B55;
+    color: #575052;
     max-width: 650px;
     margin: auto;
 }
@@ -203,11 +245,16 @@ section {
 footer {
     padding: 25px;
     background: var(--dark);
-    color: #E0DED5;
+    color: #ddd6ce;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: .75rem;
 }
+
+
+/* =========================================================
+   NOSOTROS
+   ========================================================= */
 
 .about-intro {
     background: var(--cream);
@@ -224,7 +271,7 @@ footer {
 
 .about-intro .section-head p {
     font-size: 1.2rem;
-    color: #5B5B55;
+    color: #575052;
     font-style: italic;
 }
 
@@ -240,7 +287,7 @@ footer {
     width: 100%;
     max-width: 1100px;
     height: 420px;
-    background: #DDDCD2;
+    background: #e8e1d8;
     display: grid;
     place-items: center;
 }
@@ -250,7 +297,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .7rem;
-    color: #8A8C82;
+    color: #8a7d7f;
 }
 
 .about-text {
@@ -283,6 +330,11 @@ footer {
     margin-bottom: 0;
 }
 
+
+/* =========================================================
+   MÚSICOS
+   ========================================================= */
+
 .musicians {
     background: white;
     padding: 30px 7% 115px;
@@ -305,7 +357,7 @@ footer {
     height: 220px;
     margin: 0 auto 25px;
     border-radius: 50%;
-    background: #DDDCD2;
+    background: #e8e1d8;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -316,7 +368,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .65rem;
-    color: #8A8C82;
+    color: #8a7d7f;
 }
 
 .musician h3 {
@@ -333,6 +385,11 @@ footer {
     letter-spacing: .12em;
     color: var(--dark);
 }
+
+
+/* =========================================================
+   OPCIONES
+   ========================================================= */
 
 .wedding-options,
 .event-options {
@@ -351,7 +408,7 @@ footer {
 .wedding-options .card,
 .event-options .card {
     background: white;
-    border: 1px solid rgba(199,189,170,.50);
+    border: 1px solid rgba(181,154,103,.35);
     padding: 38px 30px;
     text-align: center;
 }
@@ -366,7 +423,7 @@ footer {
 
 .wedding-options .card p,
 .event-options .card p {
-    color: #5B5B55;
+    color: #575052;
     font-size: .95rem;
 }
 
@@ -375,8 +432,13 @@ footer {
     text-align: center;
 }
 
+
+/* =========================================================
+   REPERTORIO ANTIGUO
+   ========================================================= */
+
 .repertoire-categories {
-    background: #E3E4DA;
+    background: #ece5dc;
 }
 
 .repertoire-list {
@@ -385,16 +447,16 @@ footer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0;
-    border-top: 1px solid rgba(199,189,170,.55);
+    border-top: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list > div {
     padding: 40px 45px;
-    border-bottom: 1px solid rgba(199,189,170,.55);
+    border-bottom: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list > div:nth-child(odd) {
-    border-right: 1px solid rgba(199,189,170,.55);
+    border-right: 1px solid rgba(181,154,103,.4);
 }
 
 .repertoire-list h3 {
@@ -405,7 +467,7 @@ footer {
 }
 
 .repertoire-list p {
-    color: #5B5B55;
+    color: #575052;
     font-size: 1rem;
     max-width: 430px;
 }
@@ -414,6 +476,11 @@ footer {
     background: var(--cream);
     text-align: center;
 }
+
+
+/* =========================================================
+   REPERTORIO
+   ========================================================= */
 
 .repertoire-intro {
     background: var(--cream);
@@ -430,7 +497,7 @@ footer {
 
 .repertoire-intro .section-head p {
     font-size: 1.2rem;
-    color: #5B5B55;
+    color: #575052;
     font-style: italic;
 }
 
@@ -444,20 +511,26 @@ footer {
     display: inline-block !important;
     position: relative;
     z-index: 20;
+
     background: var(--burgundy) !important;
     color: #ffffff !important;
+
     text-decoration: none !important;
     padding: 17px 34px;
+
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: .13em;
     font-size: .8rem;
     font-weight: bold;
     line-height: 1.2;
+
     border: none;
     cursor: pointer;
+
     opacity: 1 !important;
     visibility: visible !important;
+
     transition: .25s;
 }
 
@@ -466,8 +539,13 @@ footer {
     color: #ffffff !important;
 }
 
+
+/* =========================================================
+   REPERTORIO DE BODA
+   ========================================================= */
+
 .wedding-repertoire {
-    background: #E3E4DA;
+    background: #ece5dc;
     padding: 105px 7% 115px;
 }
 
@@ -491,7 +569,7 @@ footer {
 
 .wedding-repertoire-item {
     padding: 24px 10px;
-    border-bottom: 1px solid rgba(199,189,170,.55);
+    border-bottom: 1px solid rgba(181,154,103,.4);
     text-align: center;
 }
 
@@ -521,10 +599,15 @@ footer {
 }
 
 .wedding-song span {
-    color: #5B5B55;
+    color: #575052;
     text-align: left;
     font-size: 1rem;
 }
+
+
+/* =========================================================
+   REPERTORIO DE EVENTOS
+   ========================================================= */
 
 .event-repertoire {
     background: white;
@@ -555,10 +638,10 @@ footer {
     align-items: center;
     gap: 35px;
     padding: 17px 10px;
-    color: #5B5B55;
+    color: #575052;
     font-size: 1rem;
     line-height: 1.6;
-    border-bottom: 1px solid rgba(199,189,170,.35);
+    border-bottom: 1px solid rgba(181,154,103,.25);
     text-align: center;
 }
 
@@ -574,15 +657,20 @@ footer {
 }
 
 .event-repertoire-list p span {
-    color: #5B5B55;
+    color: #575052;
     text-align: left;
 }
+
+
+/* =========================================================
+   CANCIÓN ESPECIAL
+   ========================================================= */
 
 .special-song {
     background: var(--cream);
     padding: 65px 7% 75px;
     text-align: center;
-    border-top: 1px solid rgba(199,189,170,.30);
+    border-top: 1px solid rgba(181,154,103,.2);
 }
 
 .special-song-content {
@@ -600,10 +688,15 @@ footer {
 .special-song p {
     max-width: 650px;
     margin: 0 auto;
-    color: #5B5B55;
+    color: #575052;
     font-size: 1rem;
     line-height: 1.8;
 }
+
+
+/* =========================================================
+   CONTACTO
+   ========================================================= */
 
 .contact-intro {
     background: var(--cream);
@@ -620,7 +713,7 @@ footer {
 
 .contact-intro .section-head p {
     font-size: 1.2rem;
-    color: #5B5B55;
+    color: #575052;
     font-style: italic;
 }
 
@@ -636,20 +729,26 @@ footer {
     display: inline-block !important;
     position: relative;
     z-index: 20;
+
     background: var(--burgundy) !important;
     color: #ffffff !important;
+
     text-decoration: none !important;
     padding: 17px 34px;
+
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: .13em;
     font-size: .8rem;
     font-weight: bold;
     line-height: 1.2;
+
     border: none;
     cursor: pointer;
+
     opacity: 1 !important;
     visibility: visible !important;
+
     transition: .25s;
 }
 
@@ -661,20 +760,26 @@ footer {
 .contact-intro .contact-info {
     max-width: 1050px;
     margin: 75px auto 0;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     gap: 80px;
 }
 
 .contact-item {
     flex: 1;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 14px;
+
     color: var(--dark);
     text-decoration: none;
+
     transition: .25s;
 }
 
@@ -685,15 +790,18 @@ footer {
 .contact-icon {
     width: 42px;
     height: 42px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--gold);
 }
 
 .contact-icon svg {
     width: 30px;
     height: 30px;
+
     fill: none;
     stroke: currentColor;
     stroke-width: 1.5;
@@ -713,8 +821,13 @@ footer {
     text-align: center;
 }
 
+
+/* =========================================================
+   MOMENTOS VILÀTRIO
+   ========================================================= */
+
 .moments {
-    background: #E3E4DA;
+    background: #ece5dc;
     padding: 100px 7% 110px;
 }
 
@@ -734,17 +847,22 @@ footer {
 .gallery {
     max-width: 1100px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     gap: 20px;
 }
 
 .gallery-placeholder {
     min-height: 330px;
+
     background: rgba(255, 255, 255, .55);
-    border: 1px solid rgba(199,189,170,.55);
+    border: 1px solid rgba(181, 154, 103, .4);
+
     display: grid;
     place-items: center;
+
     overflow: hidden;
 }
 
@@ -753,7 +871,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .7rem;
-    color: #8A8C82;
+    color: #8a7d7f;
 }
 
 .gallery-placeholder img {
@@ -762,6 +880,11 @@ footer {
     object-fit: cover;
     display: block;
 }
+
+
+/* =========================================================
+   BODAS
+   ========================================================= */
 
 .wedding-intro {
     background: var(--cream);
@@ -778,7 +901,7 @@ footer {
 
 .wedding-intro .section-head p {
     font-size: 1.2rem;
-    color: #5B5B55;
+    color: #575052;
     font-style: italic;
 }
 
@@ -816,8 +939,13 @@ footer {
     letter-spacing: .01em;
 }
 
+
+/* =========================================================
+   MOMENTOS DE BODA
+   ========================================================= */
+
 .wedding-moments {
-    background: #E3E4DA;
+    background: #ece5dc;
     padding: 105px 7% 115px;
     text-align: center;
 }
@@ -825,8 +953,10 @@ footer {
 .wedding-moment-list {
     max-width: 1150px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     gap: 65px;
 }
 
@@ -843,10 +973,13 @@ footer {
 }
 
 .wedding-moment p {
-    color: #5B5B55;
+    color: #575052;
     font-size: 1.1rem;
     line-height: 1.9;
 }
+
+
+/* BOTÓN NUESTRO REPERTORIO */
 
 .wedding-repertoire-button {
     display: block;
@@ -859,6 +992,9 @@ footer {
     display: inline-block !important;
 }
 
+
+/* FRASE FINAL */
+
 .wedding-choice {
     max-width: 850px;
     margin: 30px auto 0;
@@ -866,14 +1002,19 @@ footer {
 }
 
 .wedding-choice p {
-    color: #5B5B55;
+    color: #575052;
     font-size: 1.15rem;
     line-height: 1.9;
     font-style: italic;
 }
 
+
+/* =========================================================
+   EVENTOS
+   ========================================================= */
+
 .event-moments {
-    background: #E3E4DA;
+    background: #ece5dc;
     padding: 105px 7% 115px;
     text-align: center;
 }
@@ -883,6 +1024,11 @@ footer {
     max-width: 900px;
 }
 
+
+/* =========================================================
+   TEXTO GENERAL
+   ========================================================= */
+
 .about-content p,
 .section-head p,
 .wedding-moment p,
@@ -891,6 +1037,11 @@ footer {
     line-height: 1.9;
     letter-spacing: .01em;
 }
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width:800px) {
 
@@ -905,6 +1056,11 @@ footer {
         flex-shrink: 0;
     }
 
+
+    /* =====================================================
+       MENÚ MÓVIL
+       ===================================================== */
+
     .menu-toggle {
         display: block;
         margin-left: auto;
@@ -915,22 +1071,31 @@ footer {
         top: 0;
         right: 0;
         left: auto;
+
         width: 50%;
         height: 100vh;
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 0;
+
         padding-top: 75px;
-        background: rgba(244, 241, 232, 0.98);
+
+        background: rgba(247, 243, 236, 0.98);
         backdrop-filter: blur(10px);
+
         border: none;
-        border-left: 1px solid rgba(199, 189, 170, 0.25);
-        box-shadow: -8px 0 20px rgba(52, 51, 47, 0.10);
+        border-left: 1px solid rgba(181, 154, 103, 0.25);
+
+        box-shadow: -8px 0 20px rgba(33, 31, 32, 0.10);
+
         opacity: 1;
         visibility: hidden;
         transform: translateX(100%);
+
         pointer-events: none;
+
         transition:
             transform 0.35s ease,
             visibility 0.35s ease;
@@ -944,13 +1109,19 @@ footer {
 
     .tabs a {
         width: 100%;
+
         text-align: left;
+
         font-size: .65rem;
         letter-spacing: .12em;
+
         padding: 15px 20px;
-        border-bottom: 1px solid rgba(199, 189, 170, 0.15);
+
+        border-bottom: 1px solid rgba(181, 154, 103, 0.15);
+
         opacity: 0;
         transform: translateX(15px);
+
         transition:
             opacity 0.25s ease,
             transform 0.25s ease,
@@ -963,12 +1134,29 @@ footer {
         transform: translateX(0);
     }
 
-    .tabs.open a:nth-child(1) { transition-delay: 0.08s; }
-    .tabs.open a:nth-child(2) { transition-delay: 0.12s; }
-    .tabs.open a:nth-child(3) { transition-delay: 0.16s; }
-    .tabs.open a:nth-child(4) { transition-delay: 0.20s; }
-    .tabs.open a:nth-child(5) { transition-delay: 0.24s; }
-    .tabs.open a:nth-child(6) { transition-delay: 0.28s; }
+    .tabs.open a:nth-child(1) {
+        transition-delay: 0.08s;
+    }
+
+    .tabs.open a:nth-child(2) {
+        transition-delay: 0.12s;
+    }
+
+    .tabs.open a:nth-child(3) {
+        transition-delay: 0.16s;
+    }
+
+    .tabs.open a:nth-child(4) {
+        transition-delay: 0.20s;
+    }
+
+    .tabs.open a:nth-child(5) {
+        transition-delay: 0.24s;
+    }
+
+    .tabs.open a:nth-child(6) {
+        transition-delay: 0.28s;
+    }
 
     .tabs a:last-child {
         border-bottom: none;
@@ -976,9 +1164,14 @@ footer {
 
     .tabs a:hover,
     .tabs a.active {
-        background: rgba(199, 189, 170, 0.08);
-        border-bottom-color: rgba(199, 189, 170, 0.15);
+        background: rgba(181, 154, 103, 0.08);
+        border-bottom-color: rgba(181, 154, 103, 0.15);
     }
+
+
+    /* =====================================================
+       PORTADA
+       ===================================================== */
 
     .hero {
         min-height: calc(100vh - 60px);
@@ -999,9 +1192,19 @@ footer {
         font-size: .7rem;
     }
 
+
+    /* =====================================================
+       GENERALES
+       ===================================================== */
+
     section {
         padding: 75px 6%;
     }
+
+
+    /* =====================================================
+       NOSOTROS
+       ===================================================== */
 
     .about-intro {
         padding: 85px 6% 60px;
@@ -1044,11 +1247,21 @@ footer {
         height: 190px;
     }
 
+
+    /* =====================================================
+       OPCIONES
+       ===================================================== */
+
     .wedding-options .cards,
     .event-options .cards {
         grid-template-columns: 1fr;
         margin-top: 40px;
     }
+
+
+    /* =====================================================
+       REPERTORIO ANTIGUO
+       ===================================================== */
 
     .repertoire-list {
         grid-template-columns: 1fr;
@@ -1061,6 +1274,11 @@ footer {
     .repertoire-list > div:nth-child(odd) {
         border-right: none;
     }
+
+
+    /* =====================================================
+       REPERTORIO
+       ===================================================== */
 
     .repertoire-intro {
         padding: 85px 6% 60px;
@@ -1141,6 +1359,11 @@ footer {
         line-height: 1.7;
     }
 
+
+    /* =====================================================
+       CONTACTO
+       ===================================================== */
+
     .contact-intro {
         padding: 85px 6% 75px;
     }
@@ -1179,6 +1402,11 @@ footer {
         font-size: .75rem;
     }
 
+
+    /* =====================================================
+       MOMENTOS VILÀTRIO
+       ===================================================== */
+
     .moments {
         padding: 75px 6% 85px;
     }
@@ -1195,6 +1423,11 @@ footer {
     .gallery-placeholder {
         min-height: 250px;
     }
+
+
+    /* =====================================================
+       BODAS
+       ===================================================== */
 
     .wedding-intro {
         padding: 85px 6% 60px;
@@ -1244,6 +1477,11 @@ footer {
     .wedding-choice {
         margin-top: 25px;
     }
+
+
+    /* =====================================================
+       EVENTOS
+       ===================================================== */
 
     .event-moments {
         padding: 75px 6% 85px;
