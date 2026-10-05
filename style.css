@@ -1,9 +1,9 @@
 :root {
-    --cream: #f7f3ec;
-    --dark: #211f20;
-    --burgundy: #6b3d4b;
-    --gold: #b59a67;
-    --white: #ffffff;
+    --cream: #F5EFE6;
+    --dark: #3A302B;
+    --burgundy: #A96555;
+    --gold: #D8C8B5;
+    --white: #FFFFFF;
 }
 
 * {
@@ -36,9 +36,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 18px 6%;
-    background: rgba(247, 243, 236, 0.96);
+    background: rgba(245, 239, 230, 0.96);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(181, 154, 103, 0.25);
+    border-bottom: 1px solid rgba(216, 200, 181, 0.25);
 }
 
 .logo {
@@ -229,7 +229,7 @@ section {
 
 .section-head p {
     font-size: 1.05rem;
-    color: #575052;
+    color: #5F554F;
     max-width: 650px;
     margin: auto;
 }
@@ -245,7 +245,7 @@ section {
 footer {
     padding: 25px;
     background: var(--dark);
-    color: #ddd6ce;
+    color: #E5DDD4;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: .75rem;
@@ -271,7 +271,7 @@ footer {
 
 .about-intro .section-head p {
     font-size: 1.2rem;
-    color: #575052;
+    color: #5F554F;
     font-style: italic;
 }
 
@@ -287,7 +287,7 @@ footer {
     width: 100%;
     max-width: 1100px;
     height: 420px;
-    background: #e8e1d8;
+    background: #E2D7CA;
     display: grid;
     place-items: center;
 }
@@ -297,7 +297,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .7rem;
-    color: #8a7d7f;
+    color: #8C7B73;
 }
 
 .about-text {
@@ -357,7 +357,7 @@ footer {
     height: 220px;
     margin: 0 auto 25px;
     border-radius: 50%;
-    background: #e8e1d8;
+    background: #E2D7CA;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -368,7 +368,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .65rem;
-    color: #8a7d7f;
+    color: #8C7B73;
 }
 
 .musician h3 {
@@ -408,7 +408,7 @@ footer {
 .wedding-options .card,
 .event-options .card {
     background: white;
-    border: 1px solid rgba(181,154,103,.35);
+    border: 1px solid rgba(216,200,181,.50);
     padding: 38px 30px;
     text-align: center;
 }
@@ -423,7 +423,7 @@ footer {
 
 .wedding-options .card p,
 .event-options .card p {
-    color: #575052;
+    color: #5F554F;
     font-size: .95rem;
 }
 
@@ -438,7 +438,7 @@ footer {
    ========================================================= */
 
 .repertoire-categories {
-    background: #ece5dc;
+    background: #E7DED2;
 }
 
 .repertoire-list {
@@ -447,16 +447,16 @@ footer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0;
-    border-top: 1px solid rgba(181,154,103,.4);
+    border-top: 1px solid rgba(216,200,181,.55);
 }
 
 .repertoire-list > div {
     padding: 40px 45px;
-    border-bottom: 1px solid rgba(181,154,103,.4);
+    border-bottom: 1px solid rgba(216,200,181,.55);
 }
 
 .repertoire-list > div:nth-child(odd) {
-    border-right: 1px solid rgba(181,154,103,.4);
+    border-right: 1px solid rgba(216,200,181,.55);
 }
 
 .repertoire-list h3 {
@@ -467,7 +467,7 @@ footer {
 }
 
 .repertoire-list p {
-    color: #575052;
+    color: #5F554F;
     font-size: 1rem;
     max-width: 430px;
 }
@@ -497,7 +497,7 @@ footer {
 
 .repertoire-intro .section-head p {
     font-size: 1.2rem;
-    color: #575052;
+    color: #5F554F;
     font-style: italic;
 }
 
@@ -545,7 +545,7 @@ footer {
    ========================================================= */
 
 .wedding-repertoire {
-    background: #ece5dc;
+    background: #E7DED2;
     padding: 105px 7% 115px;
 }
 
@@ -569,7 +569,7 @@ footer {
 
 .wedding-repertoire-item {
     padding: 24px 10px;
-    border-bottom: 1px solid rgba(181,154,103,.4);
+    border-bottom: 1px solid rgba(216,200,181,.55);
     text-align: center;
 }
 
@@ -599,7 +599,7 @@ footer {
 }
 
 .wedding-song span {
-    color: #575052;
+    color: #5F554F;
     text-align: left;
     font-size: 1rem;
 }
@@ -638,10 +638,10 @@ footer {
     align-items: center;
     gap: 35px;
     padding: 17px 10px;
-    color: #575052;
+    color: #5F554F;
     font-size: 1rem;
     line-height: 1.6;
-    border-bottom: 1px solid rgba(181,154,103,.25);
+    border-bottom: 1px solid rgba(216,200,181,.35);
     text-align: center;
 }
 
@@ -657,7 +657,7 @@ footer {
 }
 
 .event-repertoire-list p span {
-    color: #575052;
+    color: #5F554F;
     text-align: left;
 }
 
@@ -670,7 +670,7 @@ footer {
     background: var(--cream);
     padding: 65px 7% 75px;
     text-align: center;
-    border-top: 1px solid rgba(181,154,103,.2);
+    border-top: 1px solid rgba(216,200,181,.30);
 }
 
 .special-song-content {
@@ -688,7 +688,7 @@ footer {
 .special-song p {
     max-width: 650px;
     margin: 0 auto;
-    color: #575052;
+    color: #5F554F;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -713,7 +713,7 @@ footer {
 
 .contact-intro .section-head p {
     font-size: 1.2rem;
-    color: #575052;
+    color: #5F554F;
     font-style: italic;
 }
 
@@ -827,7 +827,7 @@ footer {
    ========================================================= */
 
 .moments {
-    background: #ece5dc;
+    background: #E7DED2;
     padding: 100px 7% 110px;
 }
 
@@ -858,7 +858,7 @@ footer {
     min-height: 330px;
 
     background: rgba(255, 255, 255, .55);
-    border: 1px solid rgba(181, 154, 103, .4);
+    border: 1px solid rgba(216, 200, 181, .55);
 
     display: grid;
     place-items: center;
@@ -871,7 +871,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .15em;
     font-size: .7rem;
-    color: #8a7d7f;
+    color: #8C7B73;
 }
 
 .gallery-placeholder img {
@@ -901,7 +901,7 @@ footer {
 
 .wedding-intro .section-head p {
     font-size: 1.2rem;
-    color: #575052;
+    color: #5F554F;
     font-style: italic;
 }
 
@@ -945,7 +945,7 @@ footer {
    ========================================================= */
 
 .wedding-moments {
-    background: #ece5dc;
+    background: #E7DED2;
     padding: 105px 7% 115px;
     text-align: center;
 }
@@ -973,7 +973,7 @@ footer {
 }
 
 .wedding-moment p {
-    color: #575052;
+    color: #5F554F;
     font-size: 1.1rem;
     line-height: 1.9;
 }
@@ -1002,7 +1002,7 @@ footer {
 }
 
 .wedding-choice p {
-    color: #575052;
+    color: #5F554F;
     font-size: 1.15rem;
     line-height: 1.9;
     font-style: italic;
@@ -1014,7 +1014,7 @@ footer {
    ========================================================= */
 
 .event-moments {
-    background: #ece5dc;
+    background: #E7DED2;
     padding: 105px 7% 115px;
     text-align: center;
 }
@@ -1082,13 +1082,13 @@ footer {
 
         padding-top: 75px;
 
-        background: rgba(247, 243, 236, 0.98);
+        background: rgba(245, 239, 230, 0.98);
         backdrop-filter: blur(10px);
 
         border: none;
-        border-left: 1px solid rgba(181, 154, 103, 0.25);
+        border-left: 1px solid rgba(216, 200, 181, 0.25);
 
-        box-shadow: -8px 0 20px rgba(33, 31, 32, 0.10);
+        box-shadow: -8px 0 20px rgba(58, 48, 43, 0.10);
 
         opacity: 1;
         visibility: hidden;
@@ -1117,7 +1117,7 @@ footer {
 
         padding: 15px 20px;
 
-        border-bottom: 1px solid rgba(181, 154, 103, 0.15);
+        border-bottom: 1px solid rgba(216, 200, 181, 0.15);
 
         opacity: 0;
         transform: translateX(15px);
@@ -1164,8 +1164,8 @@ footer {
 
     .tabs a:hover,
     .tabs a.active {
-        background: rgba(181, 154, 103, 0.08);
-        border-bottom-color: rgba(181, 154, 103, 0.15);
+        background: rgba(216, 200, 181, 0.08);
+        border-bottom-color: rgba(216, 200, 181, 0.15);
     }
 
 
