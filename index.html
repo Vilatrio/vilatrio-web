@@ -63,6 +63,10 @@ menuToggle.addEventListener("click", () => {
 
     menuToggle.classList.toggle("active", isOpen);
     menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Cerrar menú" : "Abrir menú"
+    );
 });
 </script>
 
