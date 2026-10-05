@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="es">
 
@@ -11,17 +12,24 @@
 <body>
 
 <nav>
-    <a class="logo" href="index.html">VILÀTRIO</a>
+    <a class="logo" href="inicio.html">VILÀTRIO</a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <div class="tabs">
-        <a href="index.html">Inicio</a>
-        <a href="vilatrio.html">Nosotros</a>
+        <a href="inicio.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
         <a class="active" href="bodas.html">Bodas</a>
         <a href="eventos.html">Eventos</a>
         <a href="repertorio.html">Repertorio</a>
         <a href="contacto.html">Contacto</a>
     </div>
 </nav>
+
 
 <section class="wedding-intro">
 
@@ -39,12 +47,14 @@
 
 </section>
 
+
 <section class="wedding-image">
 
     <img src="the-hk-photo-company-t72WgCWLZpQ-unsplash.jpg"
          alt="Momento de una boda">
 
 </section>
+
 
 <section class="wedding-introduction">
 
@@ -58,6 +68,7 @@
     </div>
 
 </section>
+
 
 <section class="wedding-moments">
 
@@ -74,6 +85,7 @@
 
         </div>
 
+
         <div class="wedding-moment">
 
             <h3>Cóctel</h3>
@@ -84,6 +96,7 @@
             </p>
 
         </div>
+
 
         <div class="wedding-moment">
 
@@ -98,6 +111,7 @@
 
     </div>
 
+
     <div class="wedding-repertoire-button">
 
         <a class="repertoire-button" href="repertorio.html">
@@ -105,6 +119,7 @@
         </a>
 
     </div>
+
 
     <div class="wedding-choice">
 
@@ -117,5 +132,24 @@
 
 </section>
 
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const tabs = document.querySelector(".tabs");
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = tabs.classList.toggle("open");
+
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Cerrar menú" : "Abrir menú"
+    );
+});
+</script>
+
+
 </body>
 </html>
+```
